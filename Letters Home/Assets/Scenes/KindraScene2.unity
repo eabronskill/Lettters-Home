@@ -9648,7 +9648,7 @@ PrefabInstance:
     - target: {fileID: 818425274704816798, guid: 55f2cb108240e7d48a48fbc6ad193616,
         type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1180093196692536385, guid: 55f2cb108240e7d48a48fbc6ad193616,
         type: 3}
@@ -9803,7 +9803,7 @@ PrefabInstance:
     - target: {fileID: 5097736722542300306, guid: 55f2cb108240e7d48a48fbc6ad193616,
         type: 3}
       propertyPath: crouchHeight
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5097736722542300306, guid: 55f2cb108240e7d48a48fbc6ad193616,
         type: 3}

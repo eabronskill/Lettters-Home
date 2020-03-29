@@ -60,7 +60,7 @@ MonoBehaviour:
   totalVaultTime: 0
   CapsuleSizes: []
   mine: {fileID: 0}
-  crouchHeight: 0
+  crouchHeight: 1
   spriteT: {fileID: 0}
   climbSpeed: 3
 --- !u!114 &5097736722542300317
