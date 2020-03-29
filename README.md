@@ -1,2 +1,2 @@
 # Lettters-Home
-Letters Home Trad Game
+Letters Home Alt Game
