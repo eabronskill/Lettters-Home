@@ -11,6 +11,8 @@ public class WeatherSystem : MonoBehaviour
     public GameObject RainEffect;
     private float RandomTimer;
     public bool Raining;
+    public Vector2 lightningTimes;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,7 @@ public class WeatherSystem : MonoBehaviour
         {
             if (RandomTimer < Time.time)
             {
-                RandomTimer = Time.time + Random.Range(5, 100);
+                RandomTimer = Time.time + Random.Range(lightningTimes.x, lightningTimes.y);
 
                  aud.PlayOneShot(ThunderClap);
                  Lighting.intensity = 3f;
