@@ -2,6 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+Letters Home/[Ll]ibrary/
+Letters Home/[Tt]emp/
+Letters Home/[Oo]bj/
+Letters Home/[Bb]uild/
+Letters Home/[Bb]uilds/
+Letters Home/[Ll]ogs/
+Letters Home/[Mm]emoryCaptures/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -10,7 +17,7 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
-# Asset meta data should only be ignored when the corresponding asset is also ignored
+# Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
 # Uncomment this line if you wish to ignore the asset store tools plugin
@@ -42,6 +49,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.dwlt
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -57,4 +65,3 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
