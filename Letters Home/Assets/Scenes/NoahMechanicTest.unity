@@ -7961,6 +7961,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 890108196}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &319663990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319663986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0232584c7736a488b832ae19f8128e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &319846094
 Mesh:
   m_ObjectHideFlags: 0
@@ -8145,6 +8157,7 @@ GameObject:
   - component: {fileID: 325190479}
   - component: {fileID: 325190481}
   - component: {fileID: 325190480}
+  - component: {fileID: 325190482}
   m_Layer: 0
   m_Name: lantern1
   m_TagString: Untagged
@@ -8275,6 +8288,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &325190482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325190478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a0232584c7736a488b832ae19f8128e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &343229000
 GameObject:
   m_ObjectHideFlags: 0
@@ -24564,7 +24589,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1502
+  m_Name: pb_Mesh-51554
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25603,7 +25628,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1510
+  m_Name: pb_Mesh-51570
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33729,7 +33754,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-19476
+  m_Name: pb_Mesh-52892
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -45173,10 +45198,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5588566568515993184, guid: 3359d68724715e74eb289f1af2ee3444,
+    - target: {fileID: 4857476968706853716, guid: 3359d68724715e74eb289f1af2ee3444,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_Center.z
+      value: -5.86
       objectReference: {fileID: 0}
     - target: {fileID: 5704422545103931817, guid: 3359d68724715e74eb289f1af2ee3444,
         type: 3}

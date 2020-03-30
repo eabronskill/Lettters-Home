@@ -9,6 +9,10 @@ public class Shooter : MonoBehaviour
     public Player play;
     public Text Ammo;
     public Text Mag;
+
+    private int prevAmmo;
+    private int prevMag;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,24 @@ public class Shooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(prevAmmo != play.ammo)
+        {
+            if(prevAmmo < play.ammo)
+            {
+                Ammo.GetComponent<BounceOnce>().Trigger();
+            }
+            prevAmmo = play.ammo;
+        }
+
+        if (prevMag != play.MagAmmo)
+        {
+            if (prevMag < play.MagAmmo)
+            {
+                Mag.GetComponent<BounceOnce>().Trigger();
+            }
+            prevMag = play.MagAmmo;
+        }
+
         if (play.CanShoot)
         {
             if (!play.Reloading)
