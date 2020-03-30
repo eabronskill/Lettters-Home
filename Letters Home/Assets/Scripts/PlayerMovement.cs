@@ -173,6 +173,11 @@ public class PlayerMovement : MonoBehaviour
         {
             if (m_dead == true)
             {
+                if (precrawl)
+                {
+                    spriteT.localPosition = new Vector3(0, spriteHeight, 0);
+                    precrawl = false;
+                }
                 Anim.SetBool("Dead", true);
             }
             Anim.SetBool("Crawlin", false);
