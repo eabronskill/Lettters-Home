@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 74397e4cac62ef94daed7c0980c51a91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -120,7 +120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245001164757397882}
   m_LocalRotation: {x: -0, y: -0, z: -0.20772693, w: 0.9781869}
-  m_LocalPosition: {x: -1.41, y: 5.09, z: -5.764943}
+  m_LocalPosition: {x: -1.36, y: 5.21, z: -5.764943}
   m_LocalScale: {x: 6.7971234, y: 0.43957, z: 1.667}
   m_Children: []
   m_Father: {fileID: 7448108988789290670}
@@ -151,7 +151,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 74397e4cac62ef94daed7c0980c51a91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -229,7 +229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5588566568515993184}
   m_LocalRotation: {x: -0, y: -0, z: -0.20772693, w: 0.9781869}
-  m_LocalPosition: {x: 4.92, y: 2.28, z: -5.764943}
+  m_LocalPosition: {x: 4.9699993, y: 2.3999999, z: -5.764943}
   m_LocalScale: {x: 6.7971234, y: 0.43957, z: 1.667}
   m_Children: []
   m_Father: {fileID: 7448108988789290670}
@@ -260,7 +260,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 74397e4cac62ef94daed7c0980c51a91, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -353,11 +353,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5704422545103931817}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.66
-  m_Center: {x: 2.23, y: 4.84, z: 0}
+  m_Center: {x: 2.23, y: 4.84, z: -5.86}
 --- !u!114 &2938836558912078710
 MonoBehaviour:
   m_ObjectHideFlags: 0
