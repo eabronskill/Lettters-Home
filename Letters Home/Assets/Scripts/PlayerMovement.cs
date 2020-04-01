@@ -103,14 +103,18 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-            if (Input.GetAxis("Horizontal") < 0 || Input.GetAxis("Vertical") > 0)
+            if (Input.GetAxis("Horizontal") < 0)
             {
                 transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
                 Anim.SetBool("Walkin", true);
             }
-            else if ((Input.GetAxis("Horizontal") > 0) || Input.GetAxis("Vertical") < 0)
+            else if ((Input.GetAxis("Horizontal") > 0))
             {
                 transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+                Anim.SetBool("Walkin", true);
+            }
+            else if ((Input.GetAxis("Vertical") != 0))
+            {
                 Anim.SetBool("Walkin", true);
             }
             else
