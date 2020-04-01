@@ -464,6 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e72d88e0bb67f48a3573249ae534e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 2
 --- !u!4 &437353590
 Transform:
   m_ObjectHideFlags: 0
@@ -751,7 +752,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 437353589}
-        m_MethodName: LoadLevel
+        m_MethodName: LoadLevelWithDelay
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -762,7 +763,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 437353592}
-        m_MethodName: fadeTo
+        m_MethodName: fadeIn
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

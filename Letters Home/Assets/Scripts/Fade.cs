@@ -9,33 +9,23 @@ public class Fade : MonoBehaviour
     Color transp = new Color(0, 0, 0, 0);
     Color opaque = new Color(0, 0, 0, 1);
 
-    public void fadeTo(float time)
+    public void fadeIn(float time)
     {
         panel.SetActive(true);
-        BlackSplash(time, true);
+        BlackSplash(time, transp, opaque);
     }
 
-    public void fadeFrom(float time)
+    public void fadeOut(float time)
     {
-        BlackSplash(time, false);
+        BlackSplash(time, opaque, transp);
         panel.SetActive(false);
     }
 
-    void BlackSplash(float time, bool fadeIn)
+    void BlackSplash(float time, Color cFrom, Color cTo)
     {
-        if (fadeIn)
-        {
-            LeanTween.value(gameObject, transp, opaque, time).setOnUpdate((Color val) =>
+            LeanTween.value(gameObject, cFrom, cTo, time).setOnUpdate((Color val) =>
             {
                 panel.GetComponent<Image>().color = val;
             });
-        }
-        else
-        {
-            LeanTween.value(gameObject, opaque, transp, time).setOnUpdate((Color val) =>
-            {
-                panel.GetComponent<Image>().color = val;
-            });
-        }
     }
 }
