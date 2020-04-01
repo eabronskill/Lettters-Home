@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class SceneLoader : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float delay = 2f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void LoadLevel(string scene)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
-        MySceneManager.LoadScene(scene);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
+            MySceneManager.LoadScene(scene);
+    }
+
+    public void LoadLevelWithDelay(string scene)
+    {
+        { StartCoroutine(sceneChange()); }
+
+        IEnumerator sceneChange()
+        {
+            yield return new WaitForSeconds(delay);
+            LoadLevel(scene);
+        }
     }
 }
