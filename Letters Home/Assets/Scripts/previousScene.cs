@@ -1,9 +1,18 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
 public class previousScene : MonoBehaviour
 {
-    public void back()
+    public void back(float delay)
     {
-        // reload the current scene
-        MySceneManager.LoadPreviousScene();
+        { StartCoroutine(sceneChange()); }
+
+        IEnumerator sceneChange()
+        {
+            yield return new WaitForSeconds(delay);
+            // reload the current scene
+            MySceneManager.LoadPreviousScene();
+        }
     }
 }
