@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OptionsMenu.unity
     guid: 398d07cdda6e8b7458a785c1f5c8e313
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 875f6aa14009b5d44926b8cb3814338b
+  - enabled: 1
+    path: Assets/Scenes/KindraScene2.unity
+    guid: b706a45a534d8e946b8bac330bf13892
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
