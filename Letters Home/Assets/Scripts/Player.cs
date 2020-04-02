@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     public int MagAmmo = 0;
     public int MagSize = 1;
     public int ammo = 0;
+    public int Letters = 0;
 
     static bool killCurrentPlayer = false;
     static Player me;
