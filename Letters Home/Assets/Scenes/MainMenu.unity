@@ -790,6 +790,7 @@ GameObject:
   - component: {fileID: 726570148}
   - component: {fileID: 726570147}
   - component: {fileID: 726570146}
+  - component: {fileID: 726570149}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -860,7 +861,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 437353589}
+      - m_Target: {fileID: 726570149}
         m_MethodName: LoadLevelWithDelay
         m_Mode: 5
         m_Arguments:
@@ -929,6 +930,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726570144}
   m_CullTransparentMesh: 0
+--- !u!114 &726570149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726570144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e72d88e0bb67f48a3573249ae534e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 2
 --- !u!1 &739278998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,7 +1316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec66f1f2e64f2a4dbfe8ae1141d84d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameScene: Intro Level
+  gameScene: Level1
 --- !u!1 &874466917
 GameObject:
   m_ObjectHideFlags: 0
