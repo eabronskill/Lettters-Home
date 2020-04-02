@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
     public int MagAmmo = 0;
     public int MagSize = 1;
     public int ammo = 0;
+    public int Letters = 0;
+
+    static bool killCurrentPlayer = false;
+    static Player me;
 
     [SerializeField]
     private Sprite baseItem;
@@ -31,6 +35,15 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(me == null)
+        {
+            me = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
         moveyBoi = GetComponent<PlayerMovement>();
     }
 
@@ -134,6 +147,17 @@ public class Player : MonoBehaviour
         {
             CanShoot = false;
         }
+        if (killCurrentPlayer)
+        {
+            killCurrentPlayer = false;
+            KillPlayer();
+        }
+    }
+
+    public static void KillPlayer()
+    {
+        Destroy(me.gameObject);
+        me = null;
     }
 
     public void Reload()
