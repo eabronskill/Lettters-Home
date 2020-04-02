@@ -22,7 +22,9 @@ public class Shooter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(prevAmmo != play.ammo)
+        Ammo.text = "" + play.ammo;
+        Mag.text = "" + play.MagAmmo;
+        if (prevAmmo != play.ammo)
         {
             if(prevAmmo < play.ammo)
             {
@@ -47,15 +49,13 @@ public class Shooter : MonoBehaviour
             else
                 Mag.text = "R";
 
-            Mag.enabled = true;
-            Ammo.enabled = true;
+            //Mag.enabled = true;
+            //Ammo.enabled = true;
             img.enabled = true;
             img.gameObject.transform.position = Input.mousePosition;
         }
         else
         {
-            Ammo.text = "" + play.ammo;
-            Mag.text = "" + play.MagAmmo;
             //Mag.enabled = false;
             //Ammo.enabled = false;
             img.enabled = false;
