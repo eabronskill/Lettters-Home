@@ -140,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (crawl)
             {
-                
+
                 spriteT.localPosition = Vector3.Lerp(new Vector3(0, crouchHeight, 0), new Vector3(0, spriteHeight, 0), ctimer - Time.time);
                 mine.center = new Vector3(0, CapsuleSizes[2][0], 0);
                 mine.height = CapsuleSizes[2][1];
@@ -155,9 +155,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (precrawl && ctimer > Time.time)
                 {
-                    spriteT.localPosition = Vector3.Lerp(new Vector3(0, spriteHeight, 0), new Vector3(0, crouchHeight, 0), (ctimer - Time.time)/.25f);
+                    spriteT.localPosition = Vector3.Lerp(new Vector3(0, spriteHeight, 0), new Vector3(0, crouchHeight, 0), (ctimer - Time.time) / .25f);
                 }
-                else if(precrawl)
+                else if (precrawl)
                 {
                     precrawl = false;
                 }
@@ -174,7 +174,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (precrawl && ctimer > Time.time)
                 {
-                    spriteT.localPosition = Vector3.Lerp(new Vector3(0, spriteHeight, 0), new Vector3(0, crouchHeight, 0), (ctimer - Time.time)/.25f);
+                    spriteT.localPosition = Vector3.Lerp(new Vector3(0, spriteHeight, 0), new Vector3(0, crouchHeight, 0), (ctimer - Time.time) / .25f);
                 }
                 else if (precrawl)
                 {
