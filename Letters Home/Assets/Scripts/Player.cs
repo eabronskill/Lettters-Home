@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     public AudioSource Aud;
     public AudioClip Shot;
     public AudioClip ReloadS;
+    public GameObject ShotLight;
     public bool Reloading = false;
     private float shottimer;
     private float reloadtimer;
@@ -28,7 +29,7 @@ public class Player : MonoBehaviour
     public int Letters = 0;
 
     static bool killCurrentPlayer = false;
-    static Player me;
+    public static Player me;
 
     [SerializeField]
     private Sprite baseItem;
@@ -150,6 +151,8 @@ public class Player : MonoBehaviour
                 Aud.volume = 1f;
                 Aud.PlayOneShot(Shot);
                 print("Took a shot");
+                ShotLight.SetActive(true);
+                Invoke("ShotLightOff", 0.1f);
 
             }
             if (Input.GetButtonDown("Reload") && CanReload == false)
@@ -167,6 +170,11 @@ public class Player : MonoBehaviour
             killCurrentPlayer = false;
             KillPlayer();
         }
+    }
+
+    void ShotLightOff()
+    {
+        ShotLight.SetActive(false);
     }
 
     public static void KillPlayer()
