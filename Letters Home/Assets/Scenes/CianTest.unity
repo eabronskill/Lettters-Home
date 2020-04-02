@@ -14242,14 +14242,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myItem: {fileID: 0}
   CanShoot: 0
+  Lantern: 0
   reloadTime: 1
   shotTime: 0.5
   CanReload: 0
+  Aud: {fileID: 0}
+  Shot: {fileID: 0}
+  ReloadS: {fileID: 0}
   Reloading: 0
   maxAmmo: 60
   MagAmmo: 0
   MagSize: 1
   ammo: 0
+  Letters: 0
   baseItem: {fileID: 10917, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!136 &581916182
 CapsuleCollider:
@@ -32622,6 +32627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   VaultEndpoint: {fileID: 656322209}
   type: 
+  vaultTime: 2
 --- !u!1001 &1431680043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45767,6 +45773,11 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 2049517807}
+    - target: {fileID: 6488741454451630320, guid: 71126dbef4ca4834c982d06f0193a3e1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 18.1449
+      objectReference: {fileID: 0}
     - target: {fileID: 6488741454451630335, guid: 71126dbef4ca4834c982d06f0193a3e1,
         type: 3}
       propertyPath: cameraTransform
@@ -45795,7 +45806,7 @@ PrefabInstance:
     - target: {fileID: 6488741455047854738, guid: 71126dbef4ca4834c982d06f0193a3e1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3414744
+      value: 7.43
       objectReference: {fileID: 0}
     - target: {fileID: 6488741455047854738, guid: 71126dbef4ca4834c982d06f0193a3e1,
         type: 3}
@@ -45852,6 +45863,11 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 2049517807}
+    - target: {fileID: 6488741455098651765, guid: 71126dbef4ca4834c982d06f0193a3e1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -9.759
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71126dbef4ca4834c982d06f0193a3e1, type: 3}
 --- !u!1001 &6493031977553218283
