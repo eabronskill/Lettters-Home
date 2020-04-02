@@ -11,9 +11,13 @@ public class Player : MonoBehaviour
     private RaycastHit hit;
     public Item myItem;
     public bool CanShoot = false;
+    public bool Lantern = false;
     public float reloadTime = 1f;
     public float shotTime = 0.5f;
     public bool CanReload = false;
+    public AudioSource Aud;
+    public AudioClip Shot;
+    public AudioClip ReloadS;
     public bool Reloading = false;
     private float shottimer;
     private float reloadtimer;
@@ -62,6 +66,13 @@ public class Player : MonoBehaviour
             moveyBoi.m_dead = true;
         }
 
+
+        if (moveyBoi.crawl && CanShoot == true)
+        {
+            CanShoot = false;
+        }
+
+
         if (Input.GetButtonDown("UseItem"))
         {
             print("Using Item!");
@@ -86,6 +97,8 @@ public class Player : MonoBehaviour
         }
         if (CanReload && reloadtimer < Time.time)
         {
+            Aud.volume = 0.75f;
+            Aud.PlayOneShot(ReloadS);
             CanReload = false;
             reloadtimer = Time.time + reloadTime;
             Reloading = true;
@@ -134,6 +147,8 @@ public class Player : MonoBehaviour
 
 
                 }
+                Aud.volume = 1f;
+                Aud.PlayOneShot(Shot);
                 print("Took a shot");
 
             }
