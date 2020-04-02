@@ -40,12 +40,12 @@ public class PatrolAI : MonoBehaviour
                 agent.SetDestination(pos1.position);
                 goingTo = 1;
                 reset = false;
-                spriteDir(pos1);
+                //spriteDir(pos1);
             }
             else if (goingTo == 1 && agent.remainingDistance > 0)
             {
                 agent.SetDestination(pos1.position);
-                spriteDir(pos1);
+                //spriteDir(pos1);
             }
             else if (goingTo == 1 && agent.remainingDistance <= 0)
             {   
@@ -56,7 +56,7 @@ public class PatrolAI : MonoBehaviour
             else if (goingTo == 2 && agent.remainingDistance > 0)
             {
                 agent.SetDestination(pos2.position);
-                spriteDir(pos2);
+                //spriteDir(pos2);
             }
             else if (goingTo == 2 && agent.remainingDistance <= 0)
             {
@@ -77,16 +77,16 @@ public class PatrolAI : MonoBehaviour
     /// Used to properly orient the direction of the Enemy sprite.
     /// </summary>
     /// <param name="pos"></param>
-    private void spriteDir(Transform pos)
-    {
-        if (this.transform.position.x > pos.transform.position.x)
-        {
-            me.enemySprite.gameObject.GetComponent<SpriteRenderer>().flipX = true;
-        }
-        else
-        {
-            me.enemySprite.gameObject.GetComponent<SpriteRenderer>().flipX = false;
-        }
-    }
+    //private void spriteDir(Transform pos)
+    //{
+    //    if (this.transform.position.x > pos.transform.position.x)
+    //    {
+    //        me.enemySprite.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+    //    }
+    //    else
+    //    {
+    //        me.enemySprite.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+    //    }
+    //}
     
 }
