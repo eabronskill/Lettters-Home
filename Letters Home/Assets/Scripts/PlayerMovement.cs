@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canVault;
     private Transform VaultPos;
+    private Vector3 StartPos;
     private float timerS;
     private float timerW;
     private float doubleTapTimer = 0.35f;
@@ -92,15 +93,31 @@ public class PlayerMovement : MonoBehaviour
                 lb = false;
             
 
-            if (canVault && (Input.GetButtonDown("Vault")))
+            if (canVault && (Input.GetButtonDown("Vault")) && !isVaulting)
             {
-                if (transform.localScale.x == 1)
-                    transform.position = VaultPos.position;
-                else
-                    transform.position = new Vector3(VaultPos.position.x - 5, VaultPos.position.y, VaultPos.position.z);
+
+                StartPos = transform.position;
+                vaulttimer = Time.time + totalVaultTime;
+                isVaulting = true;
                 canVault = false;
             }
-
+            if(isVaulting && vaulttimer > Time.time)
+            {
+                Anim.SetBool("Vaulting", true);
+                transform.position = Vector3.Slerp(VaultPos.position, StartPos, (vaulttimer - Time.time) / totalVaultTime);
+                me.isKinematic = true;
+                me.useGravity = false;
+                mine.enabled = false;
+            }
+            else if (isVaulting && vaulttimer < Time.time)
+            {
+                print("ended vault!");
+                Anim.SetBool("Vaulting", false);
+                isVaulting = false;
+                me.isKinematic = false;
+                me.useGravity = true;
+                mine.enabled = true;
+            }
 
 
             if (Input.GetAxis("Horizontal") < 0)
@@ -201,16 +218,32 @@ public class PlayerMovement : MonoBehaviour
         if (col.gameObject.tag == "Vaultable")
         {
             canVault = true;
-            print("found1");
             VaultPos = col.gameObject.GetComponent<Vaultable>().VaultEndpoint;
+            totalVaultTime = col.gameObject.GetComponent<Vaultable>().vaultTime;
+            //if (transform.localScale.x != 1)
+                //VaultPos.position = new Vector3(VaultPos.position.x - 5, VaultPos.position.y, VaultPos.position.z);
         }
     }
+
+     void OnTriggerStay(Collider other)
+     {
+        if(other.gameObject.tag == "Vaultable")
+        {
+            bool t = other.gameObject.GetComponent<Vaultable>().type == "Side";
+            if (t)
+            {
+                print("asdfasdfasdfadf");
+                canVault = true;
+                VaultPos = other.gameObject.GetComponent<Vaultable>().VaultEndpoint;
+                VaultPos.position = new Vector3(this.transform.position.x, VaultPos.position.y, VaultPos.position.z);
+            }
+        }
+     }
 
     void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == "Vaultable")
         {
-            print("found1");
             canVault = false;
         }
     }

@@ -8,14 +8,23 @@ public class ClimbLadder : MonoBehaviour
     public float climbSpeed = 3;
 
     public bool attached = false;
+    private bool clb = false;
     void OnTriggerStay(Collider col)
     {
 
         if(col.gameObject.tag == "Player" && !col.gameObject.GetComponent<Player>().GetDead())
         {
-            col.gameObject.GetComponent<PlayerMovement>().attached = attached;
 
-            attached = Input.GetButton("Interact");
+            if (Input.GetButton("Interact") && !clb)
+            {
+                attached = !attached;
+                col.gameObject.GetComponent<PlayerMovement>().attached = attached;
+                clb = true;
+            }
+            else if (clb && !Input.GetButton("Interact"))
+            {
+                clb = false;
+            }
 
 
             if (attached)
@@ -29,11 +38,12 @@ public class ClimbLadder : MonoBehaviour
                 col.gameObject.GetComponent<Rigidbody>().useGravity = true;
                 col.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             }
-
-        }else if(col.gameObject.tag == "Player" && col.gameObject.GetComponent<Player>().GetDead())
+        }
+        else if(col.gameObject.tag == "Player" && col.gameObject.GetComponent<Player>().GetDead())
         {
             attached = false;
         }
+
     }
 
 
@@ -43,7 +53,7 @@ public class ClimbLadder : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerMovement>().climbSpeed = climbSpeed;
             UI_InvFinder.me.nearItem = true;
-            UI_InvFinder.me.messageText.text = "Hold E to climb";
+            UI_InvFinder.me.messageText.text = "Press E to toggle climb";
         }
     }
 
