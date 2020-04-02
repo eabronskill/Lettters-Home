@@ -122,12 +122,19 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetAxis("Horizontal") < 0)
             {
-                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+                if (Player.me.CanShoot == false)
+                    transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+                
                 Anim.SetBool("Walkin", true);
             }
             else if ((Input.GetAxis("Horizontal") > 0))
             {
-                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+                if (Player.me.CanShoot == false)
+                    transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+                //else if(transform.localScale.x == -1)
+                //{
+                    //Anim.SetFloat("WalkMod", -1);
+                //}
                 Anim.SetBool("Walkin", true);
             }
             else if ((Input.GetAxis("Vertical") != 0))
@@ -140,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (crawl)
             {
-                
+
                 spriteT.localPosition = Vector3.Lerp(new Vector3(0, crouchHeight, 0), new Vector3(0, spriteHeight, 0), ctimer - Time.time);
                 mine.center = new Vector3(0, CapsuleSizes[2][0], 0);
                 mine.height = CapsuleSizes[2][1];
@@ -155,9 +162,9 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (precrawl && ctimer > Time.time)
                 {
-                    spriteT.localPosition = Vector3.Lerp(new Vector3(0, spriteHeight, 0), new Vector3(0, crouchHeight, 0), (ctimer - Time.time)/.25f);
+                    spriteT.localPosition = Vector3.Lerp(new Vector3(0, spriteHeight, 0), new Vector3(0, crouchHeight, 0), (ctimer - Time.time) / .25f);
                 }
-                else if(precrawl)
+                else if (precrawl)
                 {
                     precrawl = false;
                 }
@@ -174,7 +181,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (precrawl && ctimer > Time.time)
                 {
-                    spriteT.localPosition = Vector3.Lerp(new Vector3(0, spriteHeight, 0), new Vector3(0, crouchHeight, 0), (ctimer - Time.time)/.25f);
+                    spriteT.localPosition = Vector3.Lerp(new Vector3(0, spriteHeight, 0), new Vector3(0, crouchHeight, 0), (ctimer - Time.time) / .25f);
                 }
                 else if (precrawl)
                 {

@@ -11,9 +11,14 @@ public class Player : MonoBehaviour
     private RaycastHit hit;
     public Item myItem;
     public bool CanShoot = false;
+    public bool Lantern = false;
     public float reloadTime = 1f;
     public float shotTime = 0.5f;
     public bool CanReload = false;
+    public AudioSource Aud;
+    public AudioClip Shot;
+    public AudioClip ReloadS;
+    public GameObject ShotLight;
     public bool Reloading = false;
     private float shottimer;
     private float reloadtimer;
@@ -21,6 +26,10 @@ public class Player : MonoBehaviour
     public int MagAmmo = 0;
     public int MagSize = 1;
     public int ammo = 0;
+    public int Letters = 0;
+
+    static bool killCurrentPlayer = false;
+    public static Player me;
 
     [SerializeField]
     private Sprite baseItem;
@@ -31,6 +40,15 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(me == null)
+        {
+            me = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
         moveyBoi = GetComponent<PlayerMovement>();
     }
 
@@ -48,6 +66,13 @@ public class Player : MonoBehaviour
         {
             moveyBoi.m_dead = true;
         }
+
+
+        if (moveyBoi.crawl && CanShoot == true)
+        {
+            CanShoot = false;
+        }
+
 
         if (Input.GetButtonDown("UseItem"))
         {
@@ -73,6 +98,8 @@ public class Player : MonoBehaviour
         }
         if (CanReload && reloadtimer < Time.time)
         {
+            Aud.volume = 0.75f;
+            Aud.PlayOneShot(ReloadS);
             CanReload = false;
             reloadtimer = Time.time + reloadTime;
             Reloading = true;
@@ -121,7 +148,11 @@ public class Player : MonoBehaviour
 
 
                 }
+                Aud.volume = 1f;
+                Aud.PlayOneShot(Shot);
                 print("Took a shot");
+                ShotLight.SetActive(true);
+                Invoke("ShotLightOff", 0.1f);
 
             }
             if (Input.GetButtonDown("Reload") && CanReload == false)
@@ -134,6 +165,22 @@ public class Player : MonoBehaviour
         {
             CanShoot = false;
         }
+        if (killCurrentPlayer)
+        {
+            killCurrentPlayer = false;
+            KillPlayer();
+        }
+    }
+
+    void ShotLightOff()
+    {
+        ShotLight.SetActive(false);
+    }
+
+    public static void KillPlayer()
+    {
+        Destroy(me.gameObject);
+        me = null;
     }
 
     public void Reload()
