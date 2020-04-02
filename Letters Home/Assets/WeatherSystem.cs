@@ -7,6 +7,7 @@ public class WeatherSystem : MonoBehaviour
     public AudioClip ThunderClap;
     public AudioClip Rain;
     public AudioSource aud;
+    public AudioSource aud2;
     public Light Lighting;
     public GameObject RainEffect;
     private float RandomTimer;
@@ -36,7 +37,7 @@ public class WeatherSystem : MonoBehaviour
             if (!RainEffect.activeInHierarchy)
             {
                 RainEffect.SetActive(true);
-                aud.Play();
+                aud2.Play();
             }
         }else if(!Raining && RainEffect.activeInHierarchy)
         {
