@@ -16,7 +16,7 @@ public class VolumeControlNoahPrototype : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        HieghtPoints[0] = transform.position.y;
+        //HieghtPoints[0] = transform.position.y;
         checker = GetComponent<Player>();
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField]
     bool isDead = false;
     PlayerMovement moveyBoi;
     public bool dead() { return isDead; }
@@ -170,6 +171,21 @@ public class Player : MonoBehaviour
             killCurrentPlayer = false;
             KillPlayer();
         }
+    }
+
+    public void lanturnOn()
+    {
+        Lantern = true;
+    }
+
+    public void lanturnOff()
+    {
+        Lantern = false;
+    }
+
+    public void lanturnToggle()
+    {
+        Lantern = !Lantern;
     }
 
     void ShotLightOff()

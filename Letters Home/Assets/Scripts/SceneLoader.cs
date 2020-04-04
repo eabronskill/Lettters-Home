@@ -8,6 +8,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadLevel(string scene)
     {
+        Time.timeScale = 1f;
             UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
             MySceneManager.LoadScene(scene);
     }

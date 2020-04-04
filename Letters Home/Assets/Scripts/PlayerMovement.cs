@@ -42,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
     private bool lb;
     private bool crb;
 
+    private bool forcedCrawl = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +61,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (attached)
         {
+            Player.me.Lantern = false;
+
             crawl = false;
             crouch = false;
             transform.Translate(new Vector3(0, Input.GetAxis("Vertical"), 0) * Time.deltaTime * climbSpeed);
@@ -74,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
 
             me.transform.position += new Vector3(MoveVector.x, MoveVector.y, MoveVector.z) * Time.deltaTime;
 
-            if (Input.GetButton("Crawl") && !crb)
+            if (Input.GetButton("Crawl") && !crb && !forcedCrawl)
             {
                 timerS = Time.time;
                 ToggleCrawl();
@@ -83,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetButtonUp("Crawl"))
                 crb = false;
 
-            if (Input.GetButton("Crouch") && !lb)
+            if (Input.GetButton("Crouch") && !lb && !forcedCrawl)
             {
                 timerW = Time.time;
                 ToggleCrouch();
@@ -93,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
                 lb = false;
             
 
-            if (canVault && (Input.GetButtonDown("Vault")) && !isVaulting)
+            if (canVault && (Input.GetButtonDown("Vault")) && !isVaulting && !crawl && !crouch)
             {
 
                 StartPos = transform.position;
@@ -122,14 +126,14 @@ public class PlayerMovement : MonoBehaviour
 
             if (Input.GetAxis("Horizontal") < 0)
             {
-                if (Player.me.CanShoot == false)
+                if (Player.me.CanShoot == false && !attached)
                     transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
                 
                 Anim.SetBool("Walkin", true);
             }
             else if ((Input.GetAxis("Horizontal") > 0))
             {
-                if (Player.me.CanShoot == false)
+                if (Player.me.CanShoot == false && !attached)
                     transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
                 //else if(transform.localScale.x == -1)
                 //{
@@ -245,13 +249,32 @@ public class PlayerMovement : MonoBehaviour
                 VaultPos.position = new Vector3(this.transform.position.x, VaultPos.position.y, VaultPos.position.z);
             }
         }
-     }
+        
+        if (other.gameObject.tag == "Crouch")
+        {
+            if (!crouch && !crawl)
+            {
+                crouch = true;
+            }
+        }
+        if (other.gameObject.tag == "Crawl")
+        {
+            crouch = false;
+            crawl = true;
+            forcedCrawl = true;
+            precrawl = true;
+        }
+    }
 
     void OnTriggerExit(Collider col)
     {
         if (col.gameObject.tag == "Vaultable")
         {
             canVault = false;
+        }
+        if (col.gameObject.tag == "Crawl")
+        {
+            forcedCrawl = false;
         }
     }
 

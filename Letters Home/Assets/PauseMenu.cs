@@ -54,7 +54,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 0.1f;
         isPaused = true;
-        playerPosition = pm.gameObject.transform.position;
+        //playerPosition = pm.gameObject.transform.position;
         pauseUI.SetActive(true);
     }
 
@@ -62,7 +62,12 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         isPaused = false;
-        pm.transform.position = playerPosition;
+        //pm.transform.position = playerPosition;
         pauseUI.SetActive(false);
+    }
+
+    public void onDestroy()
+    {
+        Time.timeScale = 1f;
     }
 }

@@ -9,6 +9,8 @@ TagManager:
   - 1
   - 2
   - Enemy
+  - Crouch
+  - Crawl
   layers:
   - Default
   - TransparentFX
