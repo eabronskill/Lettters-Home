@@ -6,8 +6,10 @@ public class WeatherSystem : MonoBehaviour
 {
     public AudioClip ThunderClap;
     public AudioClip Rain;
+
     public AudioSource aud;
     public AudioSource aud2;
+
     public Light Lighting;
     public GameObject RainEffect;
     private float RandomTimer;
@@ -43,6 +45,7 @@ public class WeatherSystem : MonoBehaviour
         {
             RainEffect.SetActive(false);
             aud.Stop();
+            aud2.Stop();
         }
     }
 
@@ -59,7 +62,7 @@ public class WeatherSystem : MonoBehaviour
     void TOff3()
     {
         Lighting.intensity = 0;
-        Invoke("RainSound", 4f);
+        //Invoke("RainSound", 4f);
     }
 
     void RainSound()

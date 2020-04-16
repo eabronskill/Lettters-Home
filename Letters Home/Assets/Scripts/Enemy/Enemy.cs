@@ -72,6 +72,7 @@ public class Enemy : MonoBehaviour
         Destroy(enemySprite.gameObject, 0.5f);
         Destroy(this.gameObject, 0.5f);
         //Do Stuff with anims later.
+        Anim.SetBool("Dead", true);
         if(ShotSpots[2] == true)
         {
             print("Headshot");
@@ -96,6 +97,7 @@ public class Enemy : MonoBehaviour
             patrol.isPatroling = false;
             patrol.stopMoving = true;
             Invoke("ShootTarget", domeTimer);
+            Anim.SetBool("Walkin", false);
         }
         // If the enemy has reached the last seen location of the Player, wait for the look timer to run out, then go back to patrolling.
         else if (!los.canSee && isSearching && Target != null && agent.remainingDistance <= 0)
@@ -104,12 +106,14 @@ public class Enemy : MonoBehaviour
             isLooking = true;
             ltimer = Time.time + lookTime;
             agent.ResetPath();
+            Anim.SetBool("Walkin", true);
         }
         // This enemy is at the last seen location of the Player, and is looking around for them.
         else if (!los.canSee && isLooking && Target != null && ltimer > Time.time)
         {
             // TODO
             // Looking Animation
+            Anim.SetBool("Walkin", false);
         }
         // This enemy is at the last seen location of the Player, and has finished looking for them.
         else if (!los.canSee && isLooking && Target != null && Time.time > ltimer)
@@ -119,6 +123,7 @@ public class Enemy : MonoBehaviour
             isLooking = false;
             Target = null;
             agent.speed = speed;
+            Anim.SetBool("Walkin", true);
         }
     }
 
@@ -135,6 +140,7 @@ public class Enemy : MonoBehaviour
 
             // Reset patrol
             patrol.isPatroling = true;
+            Anim.SetBool("Walkin", true);
             patrol.reset = true;
             agent.speed = speed;
         }

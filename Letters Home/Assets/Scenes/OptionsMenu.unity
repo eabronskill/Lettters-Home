@@ -1323,7 +1323,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1801735173}
   m_HandleRect: {fileID: 1960541670}
   m_Direction: 2
-  m_MinValue: -80
+  m_MinValue: -1
   m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
@@ -2236,7 +2236,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1788161645}
   m_HandleRect: {fileID: 1644069007}
   m_Direction: 2
-  m_MinValue: -80
+  m_MinValue: -1
   m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
@@ -3372,7 +3372,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Medium
@@ -3614,7 +3614,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Low
@@ -6328,7 +6328,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 471253537}
   m_HandleRect: {fileID: 781559268}
   m_Direction: 2
-  m_MinValue: -80
+  m_MinValue: -1
   m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
@@ -6484,7 +6484,7 @@ MonoBehaviour:
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: High
@@ -7464,6 +7464,9 @@ MonoBehaviour:
   SFXMixer: {fileID: 24100000, guid: 6e36c77723f7b3346b6d304e32d8bae0, type: 2}
   NarrationMixer: {fileID: 24100000, guid: dabf18b4f1078c149974b285cc4f16d6, type: 2}
   resolutionDropdown: {fileID: 2129924951}
+  slider1: {fileID: 406268841}
+  slider2: {fileID: 1625487961}
+  slider3: {fileID: 621147214}
 --- !u!114 &1894153253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8231,7 +8234,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2040597928}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1120549549}
+        m_MethodName: back
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2040597928
 MonoBehaviour:
   m_ObjectHideFlags: 0

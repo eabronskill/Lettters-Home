@@ -11,7 +11,13 @@ public class WriteText : MonoBehaviour
     public List<AudioSource> sources = new List<AudioSource>();
     private bool firstTrigger = true;
 
-    private void Start()
+    void Start()
+    {
+        OnEnable();
+        firstTrigger = true;
+    }
+
+    private void OnEnable()
     {
         if (!firstTrigger)
         {

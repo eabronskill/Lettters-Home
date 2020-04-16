@@ -50,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private List<CinematicEvent> cinEvents = new List<CinematicEvent>();
     public int curEvent = 0;
+    private float ccts = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -63,8 +64,8 @@ public class PlayerMovement : MonoBehaviour
         if (begCinematicStart)
         {
             cinematicTimer = Time.time + cinematicTimer;
+            ccts = Time.time + cinEvents[curEvent].timers[cinEvents[curEvent].curMovement];
         }
-
     }
 
 
@@ -168,27 +169,38 @@ public class PlayerMovement : MonoBehaviour
             }
             else if (cinematicTimer > Time.time)
             {
-                // Left
-                if (cinEvents[curEvent].movement[cinEvents[curEvent].curMovement].left) //Can you read?
+                if (ccts > Time.time)
                 {
-                    MoveVector = new Vector3(MoveVector.x - MoveSpeed, MoveVector.y, MoveVector.z);
-                    if (Player.me.CanShoot == false && !attached)
-                        transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+                    // Left
+                    if (cinEvents[curEvent].movement[cinEvents[curEvent].curMovement].left) //Can you read?
+                    {
+                        MoveVector = new Vector3(MoveVector.x - MoveSpeed, MoveVector.y, MoveVector.z);
+                        if (Player.me.CanShoot == false && !attached)
+                            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
 
-                    Anim.SetBool("Walkin", true);
+                        Anim.SetBool("Walkin", true);
+                    }
+
+                    // Right
+                    if (cinEvents[curEvent].movement[cinEvents[curEvent].curMovement].right)
+                    {
+                        MoveVector = new Vector3(MoveVector.x + MoveSpeed, MoveVector.y, MoveVector.z);
+                        if (Player.me.CanShoot == false && !attached)
+                            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+
+                        Anim.SetBool("Walkin", true);
+                    }
+
+                    me.transform.position += new Vector3(MoveVector.x, MoveVector.y, MoveVector.z) * Time.deltaTime;
                 }
-
-                // Right
-                if (cinEvents[curEvent].movement[cinEvents[curEvent].curMovement].right) 
+                else
                 {
-                    MoveVector = new Vector3(MoveVector.x + MoveSpeed, MoveVector.y, MoveVector.z);
-                    if (Player.me.CanShoot == false && !attached)
-                        transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
-
-                    Anim.SetBool("Walkin", true);
+                    if (cinEvents[curEvent].movement.Count > cinEvents[curEvent].curMovement+1)
+                    {
+                        cinEvents[curEvent].curMovement++;
+                    }
+                    ccts = Time.time + cinEvents[curEvent].timers[cinEvents[curEvent].curMovement];
                 }
-
-                me.transform.position += new Vector3(MoveVector.x, MoveVector.y, MoveVector.z) * Time.deltaTime;
             }
             if (crawl)
             {

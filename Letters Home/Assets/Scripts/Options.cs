@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class Options : MonoBehaviour
 {
-    private static float prevMusVol;
-    private static float prevSFXVol;
-    private static float prevNarVol;
+    public static float prevMusVol;
+    public static float prevSFXVol;
+    public static float prevNarVol;
 
     public AudioMixer MusicMixer;
     public AudioMixer SFXMixer;
@@ -16,10 +16,17 @@ public class Options : MonoBehaviour
 
     private Resolution[] resolutions;
     public Dropdown resolutionDropdown;
+    public Slider slider1, slider2, slider3;
 
     // Start is called before the first frame update
     void Start()
     {
+        prevMusVol = PlayerPrefs.GetFloat("MV");
+        prevSFXVol = PlayerPrefs.GetFloat("SFXV");
+        prevNarVol = PlayerPrefs.GetFloat("NarV");
+        slider1.value = prevMusVol;
+        slider2.value = prevSFXVol;
+        slider3.value = prevNarVol;
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
         List<string> options = new List<string>();
@@ -45,18 +52,23 @@ public class Options : MonoBehaviour
 
 
     public void setMusicVolume(float v)
-
     {
+        prevMusVol = v;
+        PlayerPrefs.SetFloat("MV", v);
         MusicMixer.SetFloat("MusicVolume", Mathf.Log10(v) * 20);
     }
 
     public void setSFXVolume(float v)
     {
+        prevSFXVol = v;
+        PlayerPrefs.SetFloat("SFXV", v);
         SFXMixer.SetFloat("SFXVolume", Mathf.Log10(v) * 20);
     }
 
     public void setNarrationVolume(float v)
     {
+        prevNarVol = v;
+        PlayerPrefs.SetFloat("NarV", v);
         NarrationMixer.SetFloat("NarrationVolume", Mathf.Log10(v) * 20);
     }
 
