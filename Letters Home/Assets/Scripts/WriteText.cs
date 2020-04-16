@@ -8,14 +8,14 @@ public class WriteText : MonoBehaviour
     public UnityEngine.UI.Text script;
     public float delay;
     public AudioMixer mixer;
-    public List<AudioSource> sources;
+    public List<AudioSource> sources = new List<AudioSource>();
     private bool firstTrigger = true;
 
-    private void OnEnable()
+    private void Start()
     {
         if (!firstTrigger)
         {
-            if (sources.Count > 0)
+            if (sources.Count > 0 && sources.Count > 0)
             {
                 foreach (AudioSource source in sources)
                 {
@@ -25,8 +25,10 @@ public class WriteText : MonoBehaviour
 
             string origText = script.text;
             script.text = "";
+            print("begin Tweening");
             LeanTween.value(gameObject, 0, (float)origText.Length, delay)./*setEase(LeanTweenType.easeOut)*/setOnUpdate((float val) =>
             {
+                print("tween");
                 script.text = origText.Substring(0, Mathf.RoundToInt(val));
             }).setDelay(.5f);
         }
@@ -38,7 +40,7 @@ public class WriteText : MonoBehaviour
 
     private void OnDisable()
     {
-        if (sources.Count > 0)
+        if (sources.Count > 0 && sources.Count > 0)
         {
             foreach (AudioSource source in sources)
             {
