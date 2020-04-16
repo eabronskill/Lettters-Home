@@ -44,6 +44,13 @@ public class PlayerMovement : MonoBehaviour
 
     private bool forcedCrawl = false;
 
+    private bool left, right, up, down = false;
+    public float cinematicTimer = 0f;
+    public bool begCinematicStart = false;
+    [SerializeField]
+    private List<CinematicEvent> cinEvents = new List<CinematicEvent>();
+    public int curEvent = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,8 +60,14 @@ public class PlayerMovement : MonoBehaviour
         //spriteT= GetComponentInChildren<Transform>();
         spriteHeight = 0 + spriteT.localPosition.y;
         crouchHeight = 0 + spriteHeight - crouchHeight;
+        if (begCinematicStart)
+        {
+            cinematicTimer = Time.time + cinematicTimer;
+        }
 
     }
+
+
 
     // Update is called once per frame
     void FixedUpdate()
@@ -74,81 +87,109 @@ public class PlayerMovement : MonoBehaviour
 
             MoveVector = Vector3.zero;
 
-            MoveVector += new Vector3(Input.GetAxis("Horizontal") * MoveSpeed, 0, Input.GetAxis("Vertical") * MoveSpeed);
+           
 
-            me.transform.position += new Vector3(MoveVector.x, MoveVector.y, MoveVector.z) * Time.deltaTime;
-
-            if (Input.GetButton("Crawl") && !crb && !forcedCrawl)
-            {
-                timerS = Time.time;
-                ToggleCrawl();
-                crb = true;
-            }
-            if (Input.GetButtonUp("Crawl"))
-                crb = false;
-
-            if (Input.GetButton("Crouch") && !lb && !forcedCrawl)
-            {
-                timerW = Time.time;
-                ToggleCrouch();
-                lb = true;
-            }
-            if (Input.GetButtonUp("Crouch"))
-                lb = false;
             
 
-            if (canVault && (Input.GetButtonDown("Vault")) && !isVaulting && !crawl && !crouch)
+            if (cinematicTimer < Time.time)
             {
+                MoveVector += new Vector3(Input.GetAxis("Horizontal") * MoveSpeed, 0, Input.GetAxis("Vertical") * MoveSpeed);
+                me.transform.position += new Vector3(MoveVector.x, MoveVector.y, MoveVector.z) * Time.deltaTime;
 
-                StartPos = transform.position;
-                vaulttimer = Time.time + totalVaultTime;
-                isVaulting = true;
-                canVault = false;
-            }
-            if(isVaulting && vaulttimer > Time.time)
-            {
-                Anim.SetBool("Vaulting", true);
-                transform.position = Vector3.Slerp(VaultPos.position, StartPos, (vaulttimer - Time.time) / totalVaultTime);
-                me.isKinematic = true;
-                me.useGravity = false;
-                mine.enabled = false;
-            }
-            else if (isVaulting && vaulttimer < Time.time)
-            {
-                print("ended vault!");
-                Anim.SetBool("Vaulting", false);
-                isVaulting = false;
-                me.isKinematic = false;
-                me.useGravity = true;
-                mine.enabled = true;
-            }
+                if (Input.GetButton("Crawl") && !crb && !forcedCrawl)
+                {
+                    timerS = Time.time;
+                    ToggleCrawl();
+                    crb = true;
+                }
+                if (Input.GetButtonUp("Crawl"))
+                    crb = false;
+
+                if (Input.GetButton("Crouch") && !lb && !forcedCrawl)
+                {
+                    timerW = Time.time;
+                    ToggleCrouch();
+                    lb = true;
+                }
+                if (Input.GetButtonUp("Crouch"))
+                    lb = false;
 
 
-            if (Input.GetAxis("Horizontal") < 0)
-            {
-                if (Player.me.CanShoot == false && !attached)
-                    transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
-                
-                Anim.SetBool("Walkin", true);
-            }
-            else if ((Input.GetAxis("Horizontal") > 0))
-            {
-                if (Player.me.CanShoot == false && !attached)
-                    transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
-                //else if(transform.localScale.x == -1)
-                //{
+                if (canVault && (Input.GetButtonDown("Vault")) && !isVaulting && !crawl && !crouch)
+                {
+
+                    StartPos = transform.position;
+                    vaulttimer = Time.time + totalVaultTime;
+                    isVaulting = true;
+                    canVault = false;
+                }
+                if (isVaulting && vaulttimer > Time.time)
+                {
+                    Anim.SetBool("Vaulting", true);
+                    transform.position = Vector3.Slerp(VaultPos.position, StartPos, (vaulttimer - Time.time) / totalVaultTime);
+                    me.isKinematic = true;
+                    me.useGravity = false;
+                    mine.enabled = false;
+                }
+                else if (isVaulting && vaulttimer < Time.time)
+                {
+                    print("ended vault!");
+                    Anim.SetBool("Vaulting", false);
+                    isVaulting = false;
+                    me.isKinematic = false;
+                    me.useGravity = true;
+                    mine.enabled = true;
+                }
+
+
+                if (Input.GetAxis("Horizontal") < 0)
+                {
+                    if (Player.me.CanShoot == false && !attached)
+                        transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+
+                    Anim.SetBool("Walkin", true);
+                }
+                else if ((Input.GetAxis("Horizontal") > 0))
+                {
+                    if (Player.me.CanShoot == false && !attached)
+                        transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+                    //else if(transform.localScale.x == -1)
+                    //{
                     //Anim.SetFloat("WalkMod", -1);
-                //}
-                Anim.SetBool("Walkin", true);
+                    //}
+                    Anim.SetBool("Walkin", true);
+                }
+                else if ((Input.GetAxis("Vertical") != 0))
+                {
+                    Anim.SetBool("Walkin", true);
+                }
+                else
+                    Anim.SetBool("Walkin", false);
             }
-            else if ((Input.GetAxis("Vertical") != 0))
+            else if (cinematicTimer > Time.time)
             {
-                Anim.SetBool("Walkin", true);
+                // Left
+                if (cinEvents[curEvent].movement[cinEvents[curEvent].curMovement].left) //Can you read?
+                {
+                    MoveVector = new Vector3(MoveVector.x - MoveSpeed, MoveVector.y, MoveVector.z);
+                    if (Player.me.CanShoot == false && !attached)
+                        transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+
+                    Anim.SetBool("Walkin", true);
+                }
+
+                // Right
+                if (cinEvents[curEvent].movement[cinEvents[curEvent].curMovement].right) 
+                {
+                    MoveVector = new Vector3(MoveVector.x + MoveSpeed, MoveVector.y, MoveVector.z);
+                    if (Player.me.CanShoot == false && !attached)
+                        transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+
+                    Anim.SetBool("Walkin", true);
+                }
+
+                me.transform.position += new Vector3(MoveVector.x, MoveVector.y, MoveVector.z) * Time.deltaTime;
             }
-            else
-                Anim.SetBool("Walkin", false);
-
-
             if (crawl)
             {
 
@@ -302,3 +343,20 @@ public class PlayerMovement : MonoBehaviour
 
 
 }
+
+
+[System.Serializable]
+public class CinematicEvent
+{
+    public int curMovement = 0;
+    public List<MovementArray> movement = new List<MovementArray>();
+    public List<float> timers = new List<float>();
+
+}
+
+[System.Serializable]
+public class MovementArray
+{
+    public bool right, left, up, down = false;
+}
+
