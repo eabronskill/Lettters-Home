@@ -16,7 +16,7 @@ public class Item : MonoBehaviour
 
     private void Update()
     {
-        if (canGrab && Input.GetButton("Interact"))
+        if (canGrab && Input.GetButtonDown("Interact"))
         {
             Player.GetComponent<Player>().EquipItemPlayer(this);
             canGrab = false;

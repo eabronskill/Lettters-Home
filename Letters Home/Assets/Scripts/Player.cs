@@ -221,7 +221,7 @@ public class Player : MonoBehaviour
         if(myItem != null)
         {
             myItem.Dequip();
-            myItem.gameObject.transform.position = transform.position + Vector3.down;
+            myItem.gameObject.transform.position = transform.position + (Vector3.up * 0.5f);
             myItem.gameObject.SetActive(true);
         }
         myItem = toQuip;
@@ -231,6 +231,12 @@ public class Player : MonoBehaviour
     public void DequipCurrentItem()
     {
         myItem.Dequip();
+    }
+
+    public void RemoveCurrentItem()
+    {
+        myItem.Dequip();
+        UI_InvFinder.me.DequipItem();
     }
 
     public void Reset()

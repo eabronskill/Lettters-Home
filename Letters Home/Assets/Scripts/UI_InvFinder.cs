@@ -16,11 +16,14 @@ public class UI_InvFinder : MonoBehaviour
     public GameObject DialogueHolder;
     public Text FirstMessage;
     public Button[] Dialogues;
-    public Choice[] curChoices;
+    public List<Choice> curChoices;
+
+    private Sprite normImage;
 
 
     private void Start()
     {
+        normImage = ItemImage.sprite;
         if(me == null)
         {
             me = this;
@@ -32,16 +35,16 @@ public class UI_InvFinder : MonoBehaviour
     }
 
 
-    public void SetChoices(Choice[] cs)
+    public void SetChoices(List<Choice> cs)
     {
         curChoices = cs;
-        if (curChoices.Length == 0)
+        if (curChoices.Count == 0)
         {
             Dialogue = false;
             return;
         }
         FirstMessage.text = curChoices[0].Message;
-        for (int i = 1; i < curChoices.Length; i++)
+        for (int i = 1; i < curChoices.Count; i++)
         {
             Dialogues[i-1].GetComponentInChildren<Text>().text = curChoices[i].Message;
         }
@@ -62,11 +65,11 @@ public class UI_InvFinder : MonoBehaviour
         if (Dialogue)
         {
             DialogueHolder.SetActive(true);
-            for (int i = 0; i < curChoices.Length-1; i++)
+            for (int i = 0; i < curChoices.Count-1; i++)
             {
                 Dialogues[i].gameObject.SetActive(true);
             }
-            for(int j = curChoices.Length-1; j < Dialogues.Length; j++)
+            for(int j = curChoices.Count-1; j < Dialogues.Length; j++)
             {
                 Dialogues[j].gameObject.SetActive(false);
             }
@@ -80,6 +83,12 @@ public class UI_InvFinder : MonoBehaviour
     {
         ItemImage.sprite = item.myUI;
         ItemText.text = item.Name;
+    }
+
+    public void DequipItem()
+    {
+        ItemImage.sprite = normImage;
+        ItemText.text = "";
     }
 
 }

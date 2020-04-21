@@ -7,7 +7,7 @@ public class Dialog_Basic : MonoBehaviour
     public string NPCName;
     public bool TriggerOnEnter = false;
     private bool canTalk = false;
-    public Choice[] choices;
+    public List<Choice> choices = new List<Choice>();
     private bool social = true;
     // Start is called before the first frame update
     void Start()
@@ -72,7 +72,7 @@ public class Choice{
     public Dialog_Basic ToReturn;
     public UnityEvent OnSelect;
     public string Message;
-    public Choice[] Select()
+    public List<Choice> Select()
     {
         OnSelect.Invoke();
         if (ToReturn != null)
@@ -80,5 +80,5 @@ public class Choice{
         return nextSet;
     }
 
-    public Choice[] nextSet;
+    public List<Choice> nextSet;
 }
