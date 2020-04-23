@@ -59,9 +59,9 @@ public class MasterVolumeFader : MonoBehaviour
 
     public void setMusicVolume(float v)
     {
-        print(v);
+
         MusicMixer.SetFloat("MusicVolume", Mathf.Log10(-v) * 20);
-        print(Mathf.Log10(-v) * 20);
+
     }
 
     public void setSFXVolume(float v)

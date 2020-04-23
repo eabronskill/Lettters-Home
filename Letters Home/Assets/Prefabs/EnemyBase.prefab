@@ -124,6 +124,10 @@ MonoBehaviour:
   Dead: 0
   ShotSpots: 
   Anim: {fileID: 5104997617365188636}
+  MaybeSmoke: 0
+  SmokeTimer: 10
+  Cigarette: {fileID: 0}
+  Gun: {fileID: 0}
 --- !u!65 &1308294597
 BoxCollider:
   m_ObjectHideFlags: 0

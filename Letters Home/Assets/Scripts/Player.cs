@@ -116,18 +116,20 @@ public class Player : MonoBehaviour
             if (Input.GetMouseButtonDown(0) && MagAmmo > 0)
             {
                 MagAmmo -= 1;
-                shottimer = Time.time + shotTime;
+                shottimer = Time.time + shotTime; 
+                Debug.DrawRay(newRay.origin, newRay.direction, Color.white, 5f);
                 if (Physics.Raycast(cameraRay, out hit, 10000.0f))
                 {
-                    //print("hit at:" + hit.point);
+                    print("hit at:" + hit.point);
                     if (hit.collider.tag == "Enemy")
                     {
                         Enemy toHit = hit.collider.GetComponentInParent<Enemy>();
                         RaycastHit hit2;
-                        newRay = new Ray((this.transform.position), (toHit.transform.position - this.transform.position));
-                        if(Physics.Raycast(newRay, out hit2, 50.0f));
+                        newRay = new Ray((ShotLight.transform.position), (hit.point - ShotLight.transform.position));
+                        Debug.DrawRay(newRay.origin, newRay.direction, Color.red, 5f);
+                        if(Physics.Raycast(newRay, out hit2, 60.0f));
                         {
-                            if(hit2.collider.tag == "Enemy")
+                            if( hit2.collider != null && hit2.collider.tag == "Enemy")
                             {
                                 print(hit.collider.name);
                                 if (hit.collider.name == "Head")

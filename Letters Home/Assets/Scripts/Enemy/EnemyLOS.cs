@@ -19,37 +19,40 @@ public class EnemyLOS : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             
-            
 
             Player check = other.GetComponent<Player>();
             Target = check.gameObject;
             if (!check.GetDead()) {
                 
-                Ray ray = new Ray(RayStart.position, (other.gameObject.transform.position - RayStart.position));
-                Ray ray1 = new Ray(RayStart.position, ((other.gameObject.transform.position + Vector3.up) - RayStart.position));
-                Ray ray2 = new Ray(RayStart.position, ((other.gameObject.transform.position - Vector3.up) - RayStart.position));
+                Ray ray = new Ray(RayStart.position + Vector3.up*2, ((other.gameObject.transform.position + Vector3.up * .25f) - RayStart.position));
+                Ray ray1 = new Ray(RayStart.position + Vector3.up * 2, ((other.gameObject.transform.position + Vector3.up * .5f) - RayStart.position));
+                Ray ray2 = new Ray(RayStart.position + Vector3.up * 2, ((other.gameObject.transform.position - Vector3.up * 0.75f) - RayStart.position));
                 
-                Physics.Raycast(ray, out RaycastHit hit, maxDis);
-                Physics.Raycast(ray1, out RaycastHit hit1, maxDis);
-                Physics.Raycast(ray2, out RaycastHit hit2, maxDis);
+                Physics.Raycast(ray, out RaycastHit hit, maxDis, LayerMask.NameToLayer("EnemyRaycastIgnore"));
+                Physics.Raycast(ray1, out RaycastHit hit1, maxDis, LayerMask.NameToLayer("EnemyRaycastIgnore"));
+                Physics.Raycast(ray2, out RaycastHit hit2, maxDis, LayerMask.NameToLayer("EnemyRaycastIgnore"));
 
                 // If it hits something...
+                print(hit.collider);
+                Debug.DrawRay(ray1.origin, ray1.direction);
+                Debug.DrawRay(ray2.origin, ray2.direction);
+                Debug.DrawRay(ray.origin, ray.direction);
                 if (hit.collider != null && hit.collider.gameObject.tag == "Player")
                 {
                     LastSeen = hit.collider.gameObject.transform.position;
-                    Debug.DrawRay(RayStart.position, (other.gameObject.transform.position - RayStart.position), Color.magenta);
+                    Debug.DrawRay(ray.origin, ray.direction, Color.magenta);
                     canSee = true;
                 }
                 else if(hit1.collider != null && hit1.collider.gameObject.tag == "Player")
                 {
                     LastSeen = hit1.collider.gameObject.transform.position;
-                    Debug.DrawRay(RayStart.position, ((other.gameObject.transform.position + Vector3.up) - RayStart.position), Color.magenta);
+                    Debug.DrawRay(ray1.origin, ray1.direction, Color.magenta);
                     canSee = true;
                 }
                 else if(hit2.collider != null && hit2.collider.gameObject.tag == "Player")
                 {
                     LastSeen = hit2.collider.gameObject.transform.position;
-                    Debug.DrawRay(RayStart.position, ((other.gameObject.transform.position - Vector3.up) - RayStart.position), Color.magenta);
+                    Debug.DrawRay(ray2.origin, ray2.direction, Color.magenta);
                     canSee = true;
                 }
                 else

@@ -23,6 +23,7 @@ public class PatrolAI : MonoBehaviour
     [HideInInspector]
     public bool isFollowing = false;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,8 @@ public class PatrolAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
         if (isPatroling && !me.Dead)
         {
             if (reset)
@@ -51,7 +54,7 @@ public class PatrolAI : MonoBehaviour
             {   
                 goingTo = 2;
                 agent.SetDestination(pos2.position);
-                me.enemySprite.gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                //me.enemySprite.gameObject.GetComponent<SpriteRenderer>().flipX = false;
             }
             else if (goingTo == 2 && agent.remainingDistance > 0)
             {
@@ -62,7 +65,7 @@ public class PatrolAI : MonoBehaviour
             {
                 goingTo = 1;
                 agent.SetDestination(pos1.position);
-                me.enemySprite.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                //me.enemySprite.gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
         }
         else if (!isPatroling && stopMoving)
