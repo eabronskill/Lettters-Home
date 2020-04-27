@@ -26,12 +26,26 @@ public class ClimbLadder : MonoBehaviour
                 clb = false;
             }
 
+            if (!attached)
+            {
+                UI_InvFinder.me.nearItem = true;
+                UI_InvFinder.me.messageText.text = "Press E to toggle climb";
+            }
+            else
+                UI_InvFinder.me.nearItem = false;
 
             if (attached)
             {
                 col.gameObject.GetComponent<Rigidbody>().useGravity = false;
                 col.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                 col.gameObject.transform.position = new Vector3(ladderTop.position.x, Mathf.Min(col.gameObject.transform.position.y, ladderTop.transform.position.y), ladderTop.position.z);
+                if(Mathf.Abs(col.gameObject.transform.position.y - ladderTop.transform.position.y) < 0.1f)
+                {
+                    col.gameObject.GetComponent<Rigidbody>().useGravity = true;
+                    col.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                    col.gameObject.GetComponent<PlayerMovement>().attached = false;
+                    attached = false;
+                }
             }
             else
             {
@@ -64,6 +78,7 @@ public class ClimbLadder : MonoBehaviour
             col.gameObject.GetComponent<Rigidbody>().useGravity = true;
             col.gameObject.GetComponent<Rigidbody>().isKinematic = false;
             col.gameObject.GetComponent<PlayerMovement>().attached = false;
+            attached = false;
             UI_InvFinder.me.nearItem = false;
         }
     }
