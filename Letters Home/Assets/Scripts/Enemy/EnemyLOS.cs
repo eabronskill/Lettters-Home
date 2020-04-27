@@ -18,8 +18,8 @@ public class EnemyLOS : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-            
 
+            print("Player In Collider");
             Player check = other.GetComponent<Player>();
             Target = check.gameObject;
             if (!check.GetDead()) {
@@ -33,7 +33,7 @@ public class EnemyLOS : MonoBehaviour
                 Physics.Raycast(ray2, out RaycastHit hit2, maxDis, LayerMask.NameToLayer("EnemyRaycastIgnore"));
 
                 // If it hits something...
-                print(hit.collider);
+                print(hit.collider.gameObject);
                 Debug.DrawRay(ray1.origin, ray1.direction);
                 Debug.DrawRay(ray2.origin, ray2.direction);
                 Debug.DrawRay(ray.origin, ray.direction);

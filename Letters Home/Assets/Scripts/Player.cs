@@ -120,7 +120,7 @@ public class Player : MonoBehaviour
                 Debug.DrawRay(newRay.origin, newRay.direction, Color.white, 5f);
                 if (Physics.Raycast(cameraRay, out hit, 10000.0f))
                 {
-                    print("hit at:" + hit.point);
+                    print("hit at:" + hit.point + " and hit " + hit.collider.gameObject);
                     if (hit.collider.tag == "Enemy")
                     {
                         Enemy toHit = hit.collider.GetComponentInParent<Enemy>();
