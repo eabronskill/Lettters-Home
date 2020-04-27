@@ -7668,6 +7668,21 @@ PrefabInstance:
       propertyPath: pos2
       value: 
       objectReference: {fileID: 2109176728}
+    - target: {fileID: 4172253179092337360, guid: 85de2fbc5f24a694a8c360c04deaa497,
+        type: 3}
+      propertyPath: ShotSpots.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172253179092337360, guid: 85de2fbc5f24a694a8c360c04deaa497,
+        type: 3}
+      propertyPath: ShotSpots.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172253179092337360, guid: 85de2fbc5f24a694a8c360c04deaa497,
+        type: 3}
+      propertyPath: ShotSpots.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4172253179092337370, guid: 85de2fbc5f24a694a8c360c04deaa497,
         type: 3}
       propertyPath: m_Name

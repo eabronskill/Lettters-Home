@@ -161,8 +161,9 @@ public class Enemy : MonoBehaviour
         {
             print("BodyShot");
         }
-        Destroy(patrol);
         agent.ResetPath();
+        Destroy(patrol);
+
         Destroy(this);
     }
     /// <summary>

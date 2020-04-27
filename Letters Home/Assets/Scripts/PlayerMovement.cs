@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
             crouch = false;
             transform.Translate(new Vector3(0, Input.GetAxis("Vertical"), 0) * Time.deltaTime * climbSpeed);
             Anim.SetBool("Walkin", Input.GetAxis("Vertical") != 0);
-            spriteT.transform.rotation = Quaternion.Euler(0, 0, 90);
+            spriteT.transform.rotation = Quaternion.Euler(0,0,Mathf.Lerp(90, spriteT.transform.rotation.z, 0.1f));
             spriteT.transform.localPosition = new Vector3(1.4f, 0, 0);
             transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
             Anim.SetBool("Climbing", true);
