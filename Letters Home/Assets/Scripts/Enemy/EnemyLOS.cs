@@ -18,22 +18,20 @@ public class EnemyLOS : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-
-            print("Player In Collider");
             Player check = other.GetComponent<Player>();
             Target = check.gameObject;
             if (!check.GetDead()) {
                 
-                Ray ray = new Ray(RayStart.position + Vector3.up*2, ((other.gameObject.transform.position + Vector3.up * .25f) - RayStart.position));
-                Ray ray1 = new Ray(RayStart.position + Vector3.up * 2, ((other.gameObject.transform.position + Vector3.up * .5f) - RayStart.position));
+                Ray ray = new Ray(RayStart.position + Vector3.up*2, ((other.gameObject.transform.position + Vector3.up) - RayStart.position));
+                Ray ray1 = new Ray(RayStart.position + Vector3.up * 2, ((other.gameObject.transform.position) - RayStart.position));
                 Ray ray2 = new Ray(RayStart.position + Vector3.up * 2, ((other.gameObject.transform.position - Vector3.up * 0.75f) - RayStart.position));
                 
-                Physics.Raycast(ray, out RaycastHit hit, maxDis, LayerMask.NameToLayer("EnemyRaycastIgnore"));
-                Physics.Raycast(ray1, out RaycastHit hit1, maxDis, LayerMask.NameToLayer("EnemyRaycastIgnore"));
-                Physics.Raycast(ray2, out RaycastHit hit2, maxDis, LayerMask.NameToLayer("EnemyRaycastIgnore"));
+                Physics.Raycast(ray, out RaycastHit hit, maxDis);
+                Physics.Raycast(ray1, out RaycastHit hit1, maxDis);
+                Physics.Raycast(ray2, out RaycastHit hit2, maxDis);
 
                 // If it hits something...
-                print(hit.collider.gameObject);
+                //print(hit.collider.gameObject);
                 Debug.DrawRay(ray1.origin, ray1.direction);
                 Debug.DrawRay(ray2.origin, ray2.direction);
                 Debug.DrawRay(ray.origin, ray.direction);
