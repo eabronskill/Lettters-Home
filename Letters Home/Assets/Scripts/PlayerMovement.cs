@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     [HideInInspector]
-    public float climbSpeed = 3;
+    public float climbSpeed = 1;
     private bool precrawl;
 
     private bool lb;

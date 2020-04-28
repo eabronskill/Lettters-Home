@@ -9,26 +9,14 @@ public class WriteText : MonoBehaviour
     public float delay;
     public AudioMixer mixer;
     public List<AudioSource> sources = new List<AudioSource>();
-    private bool firstTrigger = true;
 
     void Start()
     {
         OnEnable();
-        firstTrigger = true;
     }
 
     private void OnEnable()
     {
-        if (!firstTrigger)
-        {
-            if (sources.Count > 0 /*&& sources.Count > 0*/)
-            {
-                foreach (AudioSource source in sources)
-                {
-                    source.enabled = false;
-                }
-            }
-
             string origText = script.text;
             script.text = "";
             print("begin Tweening");
@@ -37,20 +25,25 @@ public class WriteText : MonoBehaviour
                 print("tween");
                 script.text = origText.Substring(0, Mathf.RoundToInt(val));
             }).setDelay(.5f);
-        }
-        else
-        {
-            firstTrigger = false;
-        }
+
+            if (sources != null && sources.Count > 0 /*&& sources.Count > 0*/)
+            {
+                foreach (AudioSource source in sources)
+                {
+                    if(source != null)
+                        source.enabled = false;
+                }
+            }
     }
 
     private void OnDisable()
     {
-        if (sources.Count > 0 /*&& sources.Count > 0*/)
+        if (sources != null && sources.Count > 0 /*&& sources.Count > 0*/)
         {
             foreach (AudioSource source in sources)
             {
-                source.enabled = true;
+                if(source)
+                    source.enabled = true;
             }
         }
     }

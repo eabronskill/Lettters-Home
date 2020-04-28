@@ -21,6 +21,7 @@ public class Collectable : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("C" + Prefix + Number) && PlayerPrefs.GetInt("C" + Prefix + Number) == 1)
         {
+            //Uncomment before final build!
             //Destroy(this.gameObject);
         }
         narration = GetComponentInParent<AudioSource>();
