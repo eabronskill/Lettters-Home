@@ -10,9 +10,9 @@ public class Collectable : MonoBehaviour
     public Canvas LetterCanvas;
     public Text letterTextBox;
     public string letterContent;
-    public Button exitButton;
-    public Button disableButton;
-    public GameObject player;
+    private Button exitButton;
+    private Button disableButton;
+    [SerializeField]
     private AudioSource narration;
 
 
@@ -23,7 +23,9 @@ public class Collectable : MonoBehaviour
         {
             //Destroy(this.gameObject);
         }
-        narration = GetComponent<AudioSource>();
+        narration = GetComponentInParent<AudioSource>();
+        exitButton = GameObject.Find("ExitButton").GetComponent<Button>();
+        disableButton = GameObject.Find("DisableButton").GetComponent<Button>();
     }
     void OnTriggerEnter(Collider col)
     {
@@ -42,20 +44,12 @@ public class Collectable : MonoBehaviour
                 Save();
                 UI_InvFinder.me.nearItem = false;
                 letterTextBox.text = letterContent;
-                if (LetterCanvas != null)
-                    LetterCanvas.gameObject.SetActive(true);
-                //if (player != null)
-                //    player.gameObject.SetActive(false);
-                if (disableButton != null)
-                    disableButton.gameObject.SetActive(true);
-                if (exitButton != null)
-                    exitButton.gameObject.SetActive(false);
-                //if (narration != null)
-                {
-                    narration.gameObject.SetActive(true);
-                    narration.Play();
-                }
-                Destroy(this.gameObject);
+                LetterCanvas.gameObject.SetActive(true);
+                disableButton.gameObject.SetActive(true);
+                exitButton.gameObject.SetActive(false);
+                narration.gameObject.SetActive(true);
+                narration.Play();
+                //Destroy(this.gameObject); //coroutine 
             }
         }
     }
