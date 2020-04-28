@@ -423,7 +423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2409561619215308185}
   - component: {fileID: 3038852206562979945}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CameraSideBlocker (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

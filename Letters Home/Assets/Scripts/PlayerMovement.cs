@@ -52,6 +52,8 @@ public class PlayerMovement : MonoBehaviour
     public int curEvent = 0;
     private float ccts = 0f;
 
+    private bool falling;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +70,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void SetFall(float time)
+    {
+        Anim.SetBool("Falling", true);
+        falling = true;
+    }
+    public void ResetFall()
+    {
+        Anim.SetBool("Falling", false);
+        falling = false;
+    }
 
 
     // Update is called once per frame
@@ -80,6 +92,17 @@ public class PlayerMovement : MonoBehaviour
             crawl = false;
             crouch = false;
             transform.Translate(new Vector3(0, Input.GetAxis("Vertical"), 0) * Time.deltaTime * climbSpeed);
+            Anim.SetBool("Walkin", Input.GetAxis("Vertical") != 0);
+            spriteT.transform.rotation = Quaternion.Euler(0,0,Mathf.Lerp(90, spriteT.transform.rotation.z, 0.1f));
+            spriteT.transform.localPosition = new Vector3(1.4f, 0, 0);
+            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            Anim.SetBool("Climbing", true);
+        }
+        else
+        {
+            spriteT.transform.rotation = Quaternion.identity;
+            spriteT.transform.localPosition = new Vector3(0, 0, 0);
+            Anim.SetBool("Climbing", false);
         }
 
         if (!m_dead && !UI_InvFinder.me.Dialogue)

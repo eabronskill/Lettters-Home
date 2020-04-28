@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class Item : MonoBehaviour
 {
+    public static List<Item> allItems;
     public Sprite myUI;
     public string Name;
     private bool canGrab = false;
@@ -13,6 +14,19 @@ public class Item : MonoBehaviour
     public UnityEvent OnEquip;
     public UnityEvent OnDequip;
     private GameObject Player;
+    public void Start()
+    {
+        if(PlayerPrefs.HasKey("SavedItem") && PlayerPrefs.GetString("SavedItem") == Name)
+        {
+            SmoothCam2D.findCam.GetComponent<SmoothCam2D>().Target.GetComponent<Player>().EquipItemPlayer(this);
+            canGrab = false;
+            UI_InvFinder.me.EquipItem(this);
+            UI_InvFinder.me.nearItem = false;
+            this.gameObject.SetActive(false);
+        }
+
+        allItems.Add(this);
+    }
 
     private void Update()
     {
@@ -59,6 +73,33 @@ public class Item : MonoBehaviour
         {
             UI_InvFinder.me.nearItem = false;
             canGrab = false;
+            Player = null;
+        }
+    }
+
+
+    public void SaveItem()
+    {
+        if(Player != null)
+        {
+            PlayerPrefs.SetString("SavedItem", Name);
+        }
+    }
+
+    public static void ResetSavedItem()
+    {
+        PlayerPrefs.SetString("SavedItem", "");
+    }
+
+    public static void SaveAllItems()
+    {
+        foreach (Item i in allItems)
+        {
+            if (i.Player)
+            {
+                PlayerPrefs.SetString("SavedItem", i.Name);
+            }
+        
         }
     }
 

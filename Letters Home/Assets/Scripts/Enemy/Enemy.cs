@@ -61,14 +61,16 @@ public class Enemy : MonoBehaviour
         if (SmokeTimer < Time.time && Target == null && !Dead)
         {
             int c = UnityEngine.Random.Range(0, 4);
-            c = 3;
             if (c == 3)
             {
                 MaybeSmoke = true;
                 Anim.SetBool("Smoking", true);
+
                 patrol.isPatroling = false;
                 patrol.stopMoving = true;
                 Anim.SetBool("Walkin", false);
+                Vector3 temp = new Vector3(0.0f - Mathf.Abs(enemySprite.transform.localScale.x), enemySprite.transform.localScale.y, enemySprite.transform.localScale.z);
+                enemySprite.transform.localScale = temp;
                 if (Cigarette != null)
                 {
                     Cigarette.SetActive(true);
@@ -87,7 +89,8 @@ public class Enemy : MonoBehaviour
             }
             SmokeTimer = Time.time + 10.0f;
         }
-        else if(Target != null || Dead)
+
+        if(Target != null || Dead)
         {
             MaybeSmoke = false;
             Anim.SetBool("Smoking", false);
@@ -158,8 +161,9 @@ public class Enemy : MonoBehaviour
         {
             print("BodyShot");
         }
-        Destroy(patrol);
         agent.ResetPath();
+        Destroy(patrol);
+
         Destroy(this);
     }
     /// <summary>
@@ -174,10 +178,10 @@ public class Enemy : MonoBehaviour
             Target = los.Target;
             patrol.isPatroling = false;
             patrol.stopMoving = true;
-            if (!Anim.GetBool("Aiming"))
-                Invoke("ShootTarget", domeTimer);
+            Anim.SetBool("Smoking", false);
+            Invoke("ShootTarget", domeTimer);
             Anim.SetBool("Walkin", false);
-            agent.speed = 1;
+            agent.speed = 2;
             agent.stoppingDistance = 8;
             agent.SetDestination(Target.transform.position);
             if(Gun != null)
