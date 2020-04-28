@@ -1239,6 +1239,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Trigger: {fileID: 207688192361688177}
   Settee: {fileID: 5690098858482395143}
+  letterTextBox: {fileID: 0}
+  endLetterContent: 
   delayTime: 2
   e:
     m_PersistentCalls:
@@ -4401,47 +4403,47 @@ PrefabInstance:
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 
+      value: BenScene
       objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1710794318}
+      objectReference: {fileID: 5690098859725984519}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Trigger
+      value: LoadLevelWithDelay
       objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 5690098859725984519}
+      objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadLevelWithDelay
+      value: PlayOneShot
       objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: UnityEngine.AudioClip, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
@@ -4483,6 +4485,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: e0d6c061712c31642bb5a326c5a5c634, type: 3}
     - target: {fileID: 5482729627611565220, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_FontData.m_Alignment
