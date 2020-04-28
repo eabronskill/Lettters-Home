@@ -17,8 +17,9 @@ public class WriteText : MonoBehaviour
 
     private void OnEnable()
     {
+            Invoke("enableScript", 0.65f);
             string origText = script.text;
-            script.text = "";
+            
             print("begin Tweening");
             LeanTween.value(gameObject, 0, (float)origText.Length, delay)./*setEase(LeanTweenType.easeOut)*/setOnUpdate((float val) =>
             {
@@ -27,17 +28,24 @@ public class WriteText : MonoBehaviour
             }).setDelay(.5f);
 
             if (sources != null && sources.Count > 0 /*&& sources.Count > 0*/)
-            {
-                foreach (AudioSource source in sources)
                 {
-                    if(source != null)
-                        source.enabled = false;
+                    foreach (AudioSource source in sources)
+                    {
+                        if(source != null)
+                            source.enabled = false;
+                    }
                 }
-            }
+    }
+
+    void enableScript()
+    {
+        script.enabled = true;
     }
 
     private void OnDisable()
     {
+        delay = 0;
+        script.enabled = false;
         if (sources != null && sources.Count > 0 /*&& sources.Count > 0*/)
         {
             foreach (AudioSource source in sources)

@@ -179,6 +179,7 @@ MonoBehaviour:
     and the entire line greeted each other. For the rest of my life, I shall never
     forget this scene. Which goes to show that human feelings continue to go on, even
     if in these times, men do not know anything but killing and murdering. \r\n"
+  delay: 20
   Vocals: {fileID: 8300000, guid: 6e40b7a46f23475428c6c08b3a014ada, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -239,6 +240,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -343,6 +355,7 @@ MonoBehaviour:
     and the entire line greeted each other. For the rest of my life, I shall never
     forget this scene. Which goes to show that human feelings continue to go on, even
     if in these times, men do not know anything but killing and murdering. \r\n"
+  delay: 20
   Vocals: {fileID: 8300000, guid: 9d373267a4fa2114c89bb88f7ca58414, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -403,6 +416,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -694,6 +718,7 @@ MonoBehaviour:
     Billy Hastings is quite fit and the only pal left. We have been resting since
     and getting information but by all reports we shall be up again soon. No rest
     for the wicked it is said, and if true we must surely be a bad lot.\r\n"
+  delay: 20
   Vocals: {fileID: 8300000, guid: c5f26157580ac864988c6e7149fb76cb, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -754,6 +779,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -965,6 +1001,7 @@ MonoBehaviour:
     I was not at home at the time. We have another now and I must try and get a photo
     of it and let you see what it is like. I must send you one of our mess dugout
     too.\r\n"
+  delay: 20
   Vocals: {fileID: 8300000, guid: 20e9d22d0570d924aade6b1d67497b42, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -1025,6 +1062,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1154,6 +1202,7 @@ MonoBehaviour:
     if they heard Lord C Beresford was here & were trying for him, as only last week
     I saw he made a speech in England advocating the hanging of the Kaiser & his entourage
     after a trial for murder.\_\r\n"
+  delay: 20
   Vocals: {fileID: 8300000, guid: b301504067bc2ac4e92ae0bebbba265c, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -1214,6 +1263,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1384,17 +1444,17 @@ PrefabInstance:
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1141823521}
+      objectReference: {fileID: 1141823523}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: set_enabled
       objectReference: {fileID: 0}
     - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
@@ -1406,15 +1466,70 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1141823521}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1141823532}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 5482729627396464097, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5482729627611565220, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5482729627611565220, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8686282293313446702, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
       propertyPath: delay
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8686282293313446702, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
         type: 3}
@@ -1449,7 +1564,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1141823520}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141823522}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -1550,6 +1665,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1141823532 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8686282293313446702, guid: 0b4698ab1ccacb34e8cfa49e86ccbff0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1141823520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141823522}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4882db0eb15b1044e900f081b675113d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1218279494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,6 +1819,7 @@ MonoBehaviour:
     with rum, savoury, dry biscuits and caf\xE9 au rhum. This morning we came across
     a dead German. We had him buried properly and I got a couple of buttons off the
     poor devil. A weird Christmas, n\u2019est-ce pas?\r\n"
+  delay: 20
   Vocals: {fileID: 8300000, guid: 6f473b5d9c3020c48aebe034b6cb585f, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -1752,6 +1880,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2058,6 +2197,7 @@ MonoBehaviour:
     time I shall be looking forward for a short leave for I have been here nearly
     three months now and we stand a good chance. Well I must now conclude\u2026Yours
     sincerely\r\nJack Symons\r\n"
+  delay: 20
   Vocals: {fileID: 8300000, guid: ba63d67000c0e8941ab4a99c34fdbbbe, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -2118,6 +2258,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2229,6 +2380,7 @@ MonoBehaviour:
     book when she was a girl like you. Write again soon, dear, + send another crayoning
     to help cover the sand bags. \r\nHeaps of love & kisses, which you must share
     with Mamma and Betty. \r\nFrom your ever loving Daddy. \r\n"
+  delay: 20
   Vocals: {fileID: 8300000, guid: cf62180b4d303b445842601a69640c95, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -2289,6 +2441,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2404,6 +2567,7 @@ MonoBehaviour:
     myself at times when the shells are dropping all around us and the air is whistling
     with them. \r\nGoodnight my darling. Longing and hoping for a letter from you
     tomorrow. Xxxx\r\n"
+  delay: 20
   Vocals: {fileID: 8300000, guid: 721454f39dd18c84db83f486156ae613, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -2464,6 +2628,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2565,6 +2740,7 @@ MonoBehaviour:
     I am for the front on Tuesday. But if you write to the Commanding Officer and
     say I am only seventeen it will stop me from going. Get it here before Tuesday
     for I cannot get a pass to come and see you.\n\nDon\u2019t forget.\nFrom Stephen "
+  delay: 10
   Vocals: {fileID: 8300000, guid: 36fb841f8cba2af4f864fe7c2ca39f2b, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 0
@@ -2625,6 +2801,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1141823521}
         m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

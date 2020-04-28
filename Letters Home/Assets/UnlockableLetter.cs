@@ -8,6 +8,7 @@ public class UnlockableLetter : MonoBehaviour
     public Text LetterText;
     [Multiline]
     public string LetterString;
+    public float delay = 20;
     public AudioClip Vocals;
     public AudioSource VocalEmitter;
     public string UnlockKey;
@@ -31,5 +32,6 @@ public class UnlockableLetter : MonoBehaviour
     {
         LetterText.text = LetterString;
         VocalEmitter.clip = Vocals;
+        LetterText.GetComponent<WriteText>().delay = delay;
     }
 }
