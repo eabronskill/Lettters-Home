@@ -264,4 +264,17 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        PlayerPrefs.SetFloat("pPosX", transform.position.x);
+        PlayerPrefs.SetFloat("pPosY", transform.position.y);
+        PlayerPrefs.SetFloat("pPosZ", transform.position.z);
+        PlayerPrefs.SetInt("pScene", UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        //Need to save items, ammo, etc.
+        PlayerPrefs.SetInt("pAmmo", ammo);
+        PlayerPrefs.SetInt("pMag", MagAmmo);
+        PlayerPrefs.SetInt("pMagS", MagSize);
+        PlayerPrefs.SetInt("pAmmoS", maxAmmo);
+    }
+
 }
