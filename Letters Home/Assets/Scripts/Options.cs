@@ -9,6 +9,10 @@ public class Options : MonoBehaviour
     public static float prevMusVol;
     public static float prevSFXVol;
     public static float prevNarVol;
+    public static float prevMusMute;
+    public static float prevSFXMute;
+    public static float prevNarMute;
+    public static float prevFullscreen;
 
     public AudioMixer MusicMixer;
     public AudioMixer SFXMixer;
@@ -24,6 +28,10 @@ public class Options : MonoBehaviour
         prevMusVol = PlayerPrefs.GetFloat("MV");
         prevSFXVol = PlayerPrefs.GetFloat("SFXV");
         prevNarVol = PlayerPrefs.GetFloat("NarV");
+        prevMusMute = PlayerPrefs.GetFloat("MM");
+        prevSFXMute = PlayerPrefs.GetFloat("SFXM");
+        prevNarMute = PlayerPrefs.GetFloat("NarM");
+        prevFullscreen = PlayerPrefs.GetFloat("FS");
         slider1.value = prevMusVol;
         slider2.value = prevSFXVol;
         slider3.value = prevNarVol;
@@ -43,13 +51,6 @@ public class Options : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.RefreshShownValue();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     public void setMusicVolume(float v)
     {
@@ -99,7 +100,6 @@ public class Options : MonoBehaviour
     {
         QualitySettings.SetQualityLevel(q);
         Debug.Log(QualitySettings.GetQualityLevel().ToString());
-        //TODO: Fix this
     }
 
     public void setScreenSize(int r)
@@ -110,6 +110,8 @@ public class Options : MonoBehaviour
 
     public void toggleFullscreen(bool isFullscreen)
     {
+        prevFullscreen = boolToInt(isFullscreen);
+        PlayerPrefs.SetFloat("FS", boolToInt(isFullscreen));
         Screen.fullScreen = isFullscreen;
     }
     
@@ -120,10 +122,12 @@ public class Options : MonoBehaviour
         {
             prevMusVol = vol;
             setMusicVolume(-80);
+            PlayerPrefs.SetFloat("MM", 1); //true
         }
         else
         {
             setMusicVolume(prevMusVol);
+            PlayerPrefs.SetFloat("MM", 0); //false
         }
     }
     public void toggleMuteSFX()
@@ -133,10 +137,13 @@ public class Options : MonoBehaviour
         {
             prevSFXVol = vol;
             setSFXVolume(-80);
+            PlayerPrefs.SetFloat("SFXM", 1); //true
+
         }
         else
         {
             setSFXVolume(prevSFXVol);
+            PlayerPrefs.SetFloat("SFXM", 0); //false
         }
     }
     public void toggleMuteNar()
@@ -146,10 +153,18 @@ public class Options : MonoBehaviour
         {
             prevNarVol = vol;
             setNarrationVolume(-80);
+            PlayerPrefs.SetFloat("NarM", 1); //true
         }
         else
         {
             setNarrationVolume(prevNarVol);
+            PlayerPrefs.SetFloat("NarM", 0); //false
         }
+    }
+
+    private int boolToInt(bool val)
+    {
+        if (val) return 1;
+        else return 0;
     }
 }
