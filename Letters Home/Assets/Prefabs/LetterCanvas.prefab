@@ -354,6 +354,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   script: {fileID: 5482729627611565220}
   delay: 0
+  mixer: {fileID: 0}
+  sources: []
 --- !u!114 &5482729627611565220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,6 +544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e72d88e0bb67f48a3573249ae534e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  delay: 2
 --- !u!1 &5482729628731750436
 GameObject:
   m_ObjectHideFlags: 0

@@ -21,7 +21,7 @@ public class WriteText : MonoBehaviour
     {
         if (!firstTrigger)
         {
-            if (sources.Count > 0 && sources.Count > 0)
+            if (sources.Count > 0 /*&& sources.Count > 0*/)
             {
                 foreach (AudioSource source in sources)
                 {
@@ -46,7 +46,7 @@ public class WriteText : MonoBehaviour
 
     private void OnDisable()
     {
-        if (sources.Count > 0 && sources.Count > 0)
+        if (sources.Count > 0 /*&& sources.Count > 0*/)
         {
             foreach (AudioSource source in sources)
             {

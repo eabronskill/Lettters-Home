@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class DeathDetector : MonoBehaviour
 {
     public Player Trigger;
     public GameObject Settee;
+    public Text letterTextBox;
+    public string endLetterContent;
     public float delayTime = 2f;
     public UnityEvent e;
 
@@ -26,6 +29,7 @@ public class DeathDetector : MonoBehaviour
 
     public void delay()
     {
+        letterTextBox.text = endLetterContent;
         Settee.SetActive(true);
     }
 
