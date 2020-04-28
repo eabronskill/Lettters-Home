@@ -175,13 +175,13 @@ public class Enemy : MonoBehaviour
         if (los.canSee && los.Target != null && !los.Target.GetComponent<Player>().GetDead())
         {
             print("Shooting Dude");
-            Target = los.Target.gameObject;
+            Target = los.Target;
             patrol.isPatroling = false;
             patrol.stopMoving = true;
             Anim.SetBool("Smoking", false);
             Invoke("ShootTarget", domeTimer);
             Anim.SetBool("Walkin", false);
-            agent.speed = 1;
+            agent.speed = 2;
             agent.stoppingDistance = 8;
             agent.SetDestination(Target.transform.position);
             if(Gun != null)
