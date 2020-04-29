@@ -4938,7 +4938,7 @@ Transform:
   - {fileID: 723364936}
   - {fileID: 1505869916}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &181524924
 PrefabInstance:
@@ -8098,7 +8098,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1.4142, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &351574168
 GameObject:
@@ -8497,7 +8497,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &370779391
 Mesh:
@@ -13617,7 +13617,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &579800223
 Mesh:
@@ -15054,6 +15054,139 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 800328924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &629660498
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7295676856485676436, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_Radius
+      value: 15.265285
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676436, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.1803265
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676437, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: letterContent
+      value: "Dear Leader of the Company!\r\nI, the signer below, have a request to
+        make of you. Although my husband has only been in the field for four months,
+        I would like to ask you to grant him a leave of absence, namely, because of
+        our sexual relationship. \r\nI would like to have my husband just once for
+        the satisfaction of my natural desires. I just can\u2019t live like this any
+        more. I can\u2019t stand it. It is, of course, impossible for me to be satisfied
+        in other ways, firstly, because of all the children and secondly, because
+        I do not want to betray my husband. So I would like to ask you very kindly
+        to grant my request. I will then be able to carry on until we are victorious.
+        \r\nWith all reverence, \r\nFrau S\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676437, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: LetterCanvas
+      value: 
+      objectReference: {fileID: 439117934}
+    - target: {fileID: 7295676856485676437, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: letterTextBox
+      value: 
+      objectReference: {fileID: 1215004015}
+    - target: {fileID: 7295676856485676437, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: narration
+      value: 
+      objectReference: {fileID: 2056435319}
+    - target: {fileID: 7295676856485676437, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 98abfb7eddd10ce4492f47148d16a900, type: 3}
+    - target: {fileID: 7295676856485676437, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: textEatingSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 74.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.06555598
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.06555598
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.06555598
+      objectReference: {fileID: 0}
+    - target: {fileID: 7295676856485676441, guid: ea926a26275172442bb3df86a38de552,
+        type: 3}
+      propertyPath: m_Name
+      value: Letter (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea926a26275172442bb3df86a38de552, type: 3}
 --- !u!1001 &641492347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17750,7 +17883,7 @@ PrefabInstance:
     - target: {fileID: 2666505155691276289, guid: be8c558a5d2eedd468b41d3163bd3751,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2666505155691276295, guid: be8c558a5d2eedd468b41d3163bd3751,
         type: 3}
@@ -17790,7 +17923,7 @@ PrefabInstance:
     - target: {fileID: 2666505155691276295, guid: be8c558a5d2eedd468b41d3163bd3751,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2666505155691276295, guid: be8c558a5d2eedd468b41d3163bd3751,
         type: 3}
@@ -18558,7 +18691,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &794961251
 Mesh:
@@ -22242,7 +22375,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &956086036
 Mesh:
@@ -23306,7 +23439,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1008182499
 PrefabInstance:
@@ -24021,19 +24154,53 @@ PrefabInstance:
         type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: 36fb841f8cba2af4f864fe7c2ca39f2b, type: 3}
+      objectReference: {fileID: 8300000, guid: aac07d1024c0f554db5849322c87990c, type: 3}
     - target: {fileID: 7295676856485676437, guid: ea926a26275172442bb3df86a38de552,
         type: 3}
       propertyPath: textEatingSpeed
-      value: 12
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7295676856485676437, guid: ea926a26275172442bb3df86a38de552,
         type: 3}
       propertyPath: letterContent
-      value: "Dear Mother \nJust a line to let you know that I am quite well. I am
-        for the front on Tuesday. But if you write to the Commanding Officer and say
-        I am only seventeen it will stop me from going. Get it here before Tuesday
-        for I cannot get a pass to come and see you. Don\u2019t forget. \nFrom Stephen"
+      value: "Dear Mother\r\nJust a line to let you know that I am getting on all
+        right in the Army. I hope that you are all well as I am myself. I am very
+        sorry for what I done when I was at home and will pay you back when I get
+        some more pay. I like the Army very well for I am going to join the Regulars
+        when I have done my time in the Reserve. Then I shall be able to pay you back
+        for I get 30/- as a bounty. I hope you and Dad will forgive me for what I
+        done when at home. I cannot write no more at present for I have to do some
+        more work. Trusting you will forgive me. I remain your son,\r\nStephen Brown\r\n\r\nDear
+        Mother\r\nJust a line to let you know that I am getting on alright. I hope
+        you are the same. I am sorry I did not write before. We are so busy that I
+        have had no time. We are confined to barracks so I can not get a stamp\u2026
+        I hope Tommy and Archie Hammond are all right. Give my love to Kitty, Lillie,
+        Maggie, Freddy, and Ted. I hope Dad is quite well\u2026 I thank you for forgiving
+        me. I know I don\u2019t deserve it. Tell Auntie Tot and Uncle Bob that I am
+        getting on fine. Is Uncle Bob been called up yet? We are calling all our Reservists
+        up and those on leave. This is all at present. \r\nI remain your loving son,
+        Stephen\r\n\r\nDear Mother\r\nJust a line to let you know that I got the fags
+        on Tuesday. I thank you very much for sending them\u2026 They have stopped
+        the weekend passes as there are a lot of absences, but I shall ask the Captain
+        for permission to come on a pass. We are going to the front on the 19 of November.
+        Dear mother, do not worry about me for by God\u2019s help I shall come home
+        well. Give my love to Lillie, Kitty and Freddie and tell him I will come and
+        see him by and by. You will receive 3/0 shilling from me and the same from
+        the War Office which will make six all together. Give my love to all\u2026
+        This is all at present. \r\nSo goodbye from your loving son, Steve\r\n\r\n\r\nDear
+        Mother\r\nJust a line to let you know that I am alright. I am enjoying myself\u2026
+        I will soon be home.\r\nLove from Steve\r\n\r\n\r\nDear Mother\r\nJust a line
+        to let you know that I am quite well. I am for the front on Tuesday. But if
+        you write to the Commanding Officer and say I am only seventeen it will stop
+        me from going. Get it here before Tuesday for I cannot get a pass to come
+        and see you. Don\u2019t forget.\r\nFrom Stephen\r\n\r\n\r\nMother\r\nJust
+        left for France\r\nStephen\r\n\r\n\r\nDear Mother\r\nJust a line to let you
+        know that I arrived quite safe. I hope you are quite well as it leaves me
+        the same. Give my love to all at home. \r\nFrom your ever loving son,\r\nStephen\r\n\r\n\r\nDear
+        Mother\r\nJust a line to let you know that I sent you all a photo of myself
+        outside a tent door with two of my mates. Hope you will get them safe. Hoping
+        you are in the best of health as I am myself. Goodbye for the present. I remain
+        yours truly,\r\nStephen\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
         type: 3}
@@ -24073,7 +24240,7 @@ PrefabInstance:
     - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7295676856485676438, guid: ea926a26275172442bb3df86a38de552,
         type: 3}
@@ -31806,7 +31973,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 51.899002, y: 35.95, z: -16.924002}
 --- !u!43 &1415800437
 Mesh:
@@ -32516,7 +32683,7 @@ Transform:
   m_LocalScale: {x: 1.1343039, y: 1.1343039, z: 1.1343039}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1500743000 stripped
 GameObject:
@@ -38860,7 +39027,7 @@ PrefabInstance:
     - target: {fileID: 6488741455047854738, guid: 71126dbef4ca4834c982d06f0193a3e1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6488741455047854738, guid: 71126dbef4ca4834c982d06f0193a3e1,
         type: 3}
@@ -42749,7 +42916,7 @@ PrefabInstance:
     - target: {fileID: 2666505155691276295, guid: be8c558a5d2eedd468b41d3163bd3751,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2666505155691276295, guid: be8c558a5d2eedd468b41d3163bd3751,
         type: 3}
@@ -45120,7 +45287,7 @@ PrefabInstance:
     - target: {fileID: 207688192361688176, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.52
+      value: 47.24
       objectReference: {fileID: 0}
     - target: {fileID: 207688192361688176, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
@@ -45130,7 +45297,7 @@ PrefabInstance:
     - target: {fileID: 207688192361688176, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.08
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 207688192494536781, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
@@ -45597,7 +45764,7 @@ PrefabInstance:
     - target: {fileID: 207688194478038317, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 207688194478038317, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
@@ -45663,12 +45830,12 @@ PrefabInstance:
     - target: {fileID: 3595880076572649139, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000000035541272
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3595880076572649139, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000006749062
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3722619911100392784, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
@@ -45718,12 +45885,12 @@ PrefabInstance:
     - target: {fileID: 5099347722878977464, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.0000000040012265
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5099347722878977464, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000060659204
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5099347723158763816, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
@@ -45738,12 +45905,12 @@ PrefabInstance:
     - target: {fileID: 5099347723158763816, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000004410051
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5099347723158763816, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000674401
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5099347724269456546, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
@@ -45829,6 +45996,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690098857802886791, guid: fc5eb1513776f1240b760fe710d71994,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5690098857802886791, guid: fc5eb1513776f1240b760fe710d71994,
+        type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5690098857883975618, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
@@ -45928,12 +46105,12 @@ PrefabInstance:
     - target: {fileID: 6773321811328200355, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0000000022586522
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6773321811328200355, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000060749045
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6977916121093038552, guid: fc5eb1513776f1240b760fe710d71994,
         type: 3}

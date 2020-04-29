@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7295676856485676440}
   - component: {fileID: 7295676856485676436}
   - component: {fileID: 7295676856485676437}
-  - component: {fileID: 1756981170}
   m_Layer: 0
   m_Name: Letter
   m_TagString: Untagged
@@ -30,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7295676856485676441}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.08, y: -9.37, z: 3.17}
-  m_LocalScale: {x: 0.20909, y: 0.20909, z: 0.20909}
+  m_LocalScale: {x: 0.048086517, y: 0.048086517, z: 0.048086517}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 334192474718896800, guid: 41742c66bbc8f1c47befbdb0d2e64e1a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61d9a5201f3e87a40bc973bd87201a91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -109,8 +108,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.28
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 18.59005
+  m_Center: {x: -0.10950219, y: 0, z: 0}
 --- !u!114 &7295676856485676437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,107 +126,43 @@ MonoBehaviour:
   Prefix: 
   LetterCanvas: {fileID: 0}
   letterTextBox: {fileID: 0}
-  letterContent: "Dear Mother Just a line to let you know that I am quite well. I
-    am for the front on Tuesday. But if you write to the Commanding Officer and say
-    I am only seventeen it will stop me from going. Get it here before Tuesday for
-    I cannot get a pass to come and see you. Don\u2019t forget. From Stephen"
-  exitButton: {fileID: 0}
-  disableButton: {fileID: 0}
-  player: {fileID: 0}
---- !u!82 &1756981170
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7295676856485676441}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: dabf18b4f1078c149974b285cc4f16d6,
-    type: 2}
-  m_audioClip: {fileID: 8300000, guid: 55de2643c930145499e765eed9b1a74d, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  letterContent: "Dear Mother\r\nJust a line to let you know that I am getting on
+    all right in the Army. I hope that you are all well as I am myself. I am very
+    sorry for what I done when I was at home and will pay you back when I get some
+    more pay. I like the Army very well for I am going to join the Regulars when I
+    have done my time in the Reserve. Then I shall be able to pay you back for I get
+    30/- as a bounty. I hope you and Dad will forgive me for what I done when at home.
+    I cannot write no more at present for I have to do some more work. Trusting you
+    will forgive me. I remain your son,\r\nStephen Brown\r\n\r\nDear Mother\r\nJust
+    a line to let you know that I am getting on alright. I hope you are the same.
+    I am sorry I did not write before. We are so busy that I have had no time. We
+    are confined to barracks so I can not get a stamp\u2026 I hope Tommy and Archie
+    Hammond are all right. Give my love to Kitty, Lillie, Maggie, Freddy, and Ted.
+    I hope Dad is quite well\u2026 I thank you for forgiving me. I know I don\u2019t
+    deserve it. Tell Auntie Tot and Uncle Bob that I am getting on fine. Is Uncle
+    Bob been called up yet? We are calling all our Reservists up and those on leave.
+    This is all at present. \r\nI remain your loving son, Stephen\r\n\r\nDear Mother\r\nJust
+    a line to let you know that I got the fags on Tuesday. I thank you very much for
+    sending them\u2026 They have stopped the weekend passes as there are a lot of
+    absences, but I shall ask the Captain for permission to come on a pass. We are
+    going to the front on the 19 of November. Dear mother, do not worry about me for
+    by God\u2019s help I shall come home well. Give my love to Lillie, Kitty and Freddie
+    and tell him I will come and see him by and by. You will receive 3/0 shilling
+    from me and the same from the War Office which will make six all together. Give
+    my love to all\u2026 This is all at present. \r\nSo goodbye from your loving son,
+    Steve\r\n\r\n\r\nDear Mother\r\nJust a line to let you know that I am alright.
+    I am enjoying myself\u2026 I will soon be home.\r\nLove from Steve\r\n\r\n\r\nDear
+    Mother\r\nJust a line to let you know that I am quite well. I am for the front
+    on Tuesday. But if you write to the Commanding Officer and say I am only seventeen
+    it will stop me from going. Get it here before Tuesday for I cannot get a pass
+    to come and see you. Don\u2019t forget.\r\nFrom Stephen\r\n\r\n\r\nMother\r\nJust
+    left for France\r\nStephen\r\n\r\n\r\nDear Mother\r\nJust a line to let you know
+    that I arrived quite safe. I hope you are quite well as it leaves me the same.
+    Give my love to all at home. \r\nFrom your ever loving son,\r\nStephen\r\n\r\n\r\nDear
+    Mother\r\nJust a line to let you know that I sent you all a photo of myself outside
+    a tent door with two of my mates. Hope you will get them safe. Hoping you are
+    in the best of health as I am myself. Goodbye for the present. I remain yours
+    truly,\r\nStephen\r\n"
+  narration: {fileID: 0}
+  clip: {fileID: 8300000, guid: aac07d1024c0f554db5849322c87990c, type: 3}
+  textEatingSpeed: 120
