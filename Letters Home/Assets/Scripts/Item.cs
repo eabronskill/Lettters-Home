@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class Item : MonoBehaviour
 {
-    public static List<Item> allItems;
+    public static List<Item> allItems = new List<Item>();
     public Sprite myUI;
     public string Name;
     private bool canGrab = false;
@@ -16,7 +16,7 @@ public class Item : MonoBehaviour
     private GameObject Player;
     public void Start()
     {
-        if(PlayerPrefs.HasKey("SavedItem") && PlayerPrefs.GetString("SavedItem") == Name)
+        if (PlayerPrefs.HasKey("SavedItem") && PlayerPrefs.GetString("SavedItem") == Name)
         {
             SmoothCam2D.findCam.GetComponent<SmoothCam2D>().Target.GetComponent<Player>().EquipItemPlayer(this);
             canGrab = false;
@@ -37,7 +37,7 @@ public class Item : MonoBehaviour
             UI_InvFinder.me.EquipItem(this);
             UI_InvFinder.me.nearItem = false;
             this.gameObject.SetActive(false);
-            
+
         }
     }
 
@@ -57,7 +57,7 @@ public class Item : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             Player = other.gameObject;
             UI_InvFinder.me.messageText.text = "PRESS E TO PICKUP:" + Name;
@@ -80,7 +80,7 @@ public class Item : MonoBehaviour
 
     public void SaveItem()
     {
-        if(Player != null)
+        if (Player != null)
         {
             PlayerPrefs.SetString("SavedItem", Name);
         }
@@ -99,7 +99,7 @@ public class Item : MonoBehaviour
             {
                 PlayerPrefs.SetString("SavedItem", i.Name);
             }
-        
+
         }
     }
 

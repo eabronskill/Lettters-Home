@@ -10,15 +10,23 @@ public class DeathDetector : MonoBehaviour
     public Player Trigger;
     public GameObject Settee;
     public Text letterTextBox;
+    [Multiline]
     public string endLetterContent;
     public float delayTime = 2f;
     public UnityEvent e;
-
+    public float textEatingSpeed;
+    private bool hasDied = false;
+    public AudioSource narration;
+    public AudioClip clip;
     // Update is called once per frame
     void Update()
     {
-        if (Trigger.GetDead() && !Settee.activeInHierarchy)
+        if (Trigger.GetDead() && !Settee.activeInHierarchy && !hasDied)
+        {
             Invoke("delay", delayTime);
+            hasDied = true;
+        }
+
             //Settee.SetActive(true);
     }
 
@@ -30,7 +38,12 @@ public class DeathDetector : MonoBehaviour
     public void delay()
     {
         letterTextBox.text = endLetterContent;
+        Settee.GetComponentInChildren<WriteText>().delay = textEatingSpeed;
+        Settee.GetComponentInChildren<WriteText>().enabled = true;
+        //Settee.GetComponentInChildren<Text>().enabled = true;
         Settee.SetActive(true);
+        narration.gameObject.SetActive(true);
+        narration.PlayOneShot(clip);
     }
 
     private void OnGUI()

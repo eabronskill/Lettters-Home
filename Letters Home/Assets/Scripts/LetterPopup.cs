@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LetterPopup : MonoBehaviour
 {
     private GameObject player;
+    public Button disableButton;
+    public Button exitButton;
 
     // Start is called before the first frame update
     void Start()
@@ -22,4 +25,10 @@ public class LetterPopup : MonoBehaviour
 
     //    }
     //}
+
+    public void switchButtons()
+    {
+        disableButton.gameObject.SetActive(true);
+        exitButton.gameObject.SetActive(false);
+    }
 }

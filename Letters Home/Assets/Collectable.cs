@@ -9,11 +9,11 @@ public class Collectable : MonoBehaviour
     public string Prefix = "";
     public Canvas LetterCanvas;
     public Text letterTextBox;
+    [Multiline]
     public string letterContent;
-    private Button exitButton;
-    private Button disableButton;
-    [SerializeField]
-    private AudioSource narration;
+    public AudioSource narration;
+    public AudioClip clip;
+    public float textEatingSpeed;
 
 
     // Start is called before the first frame update
@@ -24,9 +24,6 @@ public class Collectable : MonoBehaviour
             //Uncomment before final build!
             //Destroy(this.gameObject);
         }
-        narration = GetComponentInParent<AudioSource>();
-        exitButton = GameObject.Find("ExitButton").GetComponent<Button>();
-        disableButton = GameObject.Find("DisableButton").GetComponent<Button>();
     }
     void OnTriggerEnter(Collider col)
     {
@@ -45,11 +42,12 @@ public class Collectable : MonoBehaviour
                 Save();
                 UI_InvFinder.me.nearItem = false;
                 letterTextBox.text = letterContent;
+                letterTextBox.gameObject.GetComponent<WriteText>().enabled = true;
+                letterTextBox.gameObject.GetComponent<WriteText>().delay = textEatingSpeed;
                 LetterCanvas.gameObject.SetActive(true);
-                disableButton.gameObject.SetActive(true);
-                exitButton.gameObject.SetActive(false);
+                LetterCanvas.gameObject.GetComponent<LetterPopup>().switchButtons();
                 narration.gameObject.SetActive(true);
-                narration.Play();
+                narration.PlayOneShot(clip);
                 //Destroy(this.gameObject); //coroutine 
             }
         }

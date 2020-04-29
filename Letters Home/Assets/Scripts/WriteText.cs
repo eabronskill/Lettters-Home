@@ -12,7 +12,7 @@ public class WriteText : MonoBehaviour
 
     void Start()
     {
-        OnEnable();
+        //OnEnable();
     }
 
     private void OnEnable()
