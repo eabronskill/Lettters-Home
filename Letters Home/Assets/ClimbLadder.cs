@@ -9,6 +9,7 @@ public class ClimbLadder : MonoBehaviour
 
     public bool attached = false;
     private bool clb = false;
+    public bool detachX = false;
     void OnTriggerStay(Collider col)
     {
 
@@ -44,6 +45,15 @@ public class ClimbLadder : MonoBehaviour
                     col.gameObject.GetComponent<Rigidbody>().useGravity = true;
                     col.gameObject.GetComponent<Rigidbody>().isKinematic = false;
                     col.gameObject.GetComponent<PlayerMovement>().attached = false;
+                    if (detachX)
+                    {
+                        col.gameObject.transform.position = Vector3.Lerp(col.gameObject.transform.position, new Vector3(col.gameObject.transform.position.x + 1, col.gameObject.transform.position.y, col.gameObject.transform.position.z), 0.5f);
+                    }
+                    else
+                    {
+                        col.gameObject.transform.position = Vector3.Lerp(col.gameObject.transform.position, new Vector3(col.gameObject.transform.position.x, col.gameObject.transform.position.y, col.gameObject.transform.position.z + 1), 0.5f);
+                    }
+                     
                     attached = false;
                 }
             }
