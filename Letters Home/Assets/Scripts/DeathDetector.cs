@@ -18,6 +18,8 @@ public class DeathDetector : MonoBehaviour
     private bool hasDied = false;
     public AudioSource narration;
     public AudioClip clip;
+    public int unlockedLetter;
+
     // Update is called once per frame
     void Update()
     {
@@ -44,10 +46,6 @@ public class DeathDetector : MonoBehaviour
         Settee.SetActive(true);
         narration.gameObject.SetActive(true);
         narration.PlayOneShot(clip);
-    }
-
-    private void OnGUI()
-    {
-        
+        PlayerPrefs.SetInt("C" + unlockedLetter, 1);
     }
 }

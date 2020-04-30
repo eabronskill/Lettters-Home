@@ -118,10 +118,10 @@ public class Options : MonoBehaviour
     public void toggleMuteMusic()
     {
         float vol = getMusicVolume();
-        if (vol != -80 && ! float.IsNaN(vol))
+        if (vol > 0 && ! float.IsNaN(vol))
         {
             prevMusVol = vol;
-            setMusicVolume(-80);
+            setMusicVolume(0);
             PlayerPrefs.SetFloat("MM", 1); //true
         }
         else
@@ -133,10 +133,10 @@ public class Options : MonoBehaviour
     public void toggleMuteSFX()
     {
         float vol = getSFXVolume();
-        if (vol != -80 && !float.IsNaN(vol))
+        if (vol > 0 && !float.IsNaN(vol))
         {
             prevSFXVol = vol;
-            setSFXVolume(-80);
+            setSFXVolume(0);
             PlayerPrefs.SetFloat("SFXM", 1); //true
 
         }
@@ -149,10 +149,10 @@ public class Options : MonoBehaviour
     public void toggleMuteNar()
     {
         float vol = getNarrationVolume();
-        if (vol != -80 && !float.IsNaN(vol))
+        if (vol > 0 && !float.IsNaN(vol))
         {
             prevNarVol = vol;
-            setNarrationVolume(-80);
+            setNarrationVolume(0);
             PlayerPrefs.SetFloat("NarM", 1); //true
         }
         else
