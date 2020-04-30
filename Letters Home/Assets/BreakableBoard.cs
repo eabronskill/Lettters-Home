@@ -18,6 +18,7 @@ public class BreakableBoard : MonoBehaviour
                 g.SetActive(true);
 
             other.GetComponent<PlayerMovement>().crawl = true;
+            other.GetComponent<PlayerMovement>().precrawl = true;
             other.GetComponent<PlayerMovement>().crouch = false;
 
         }

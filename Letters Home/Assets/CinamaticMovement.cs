@@ -19,7 +19,7 @@ public class CinamaticMovement : MonoBehaviour
         {
             if(anim)
                 link.SetBool(wTag, true);
-            transform.position = Vector3.Lerp(PosList[Journey].StartPoint.position, PosList[Journey].EndPoint.position, (timer - Time.time) / PosList[Journey].jTime);
+            transform.position = Vector3.Lerp(PosList[Journey].EndPoint.position, PosList[Journey].StartPoint.position, (timer - Time.time) / PosList[Journey].jTime);
 
             transform.localScale = new Vector3((PosList[Journey].StartPoint.position.x < PosList[Journey].EndPoint.position.x) ? 1 : -1,1,1);
         }
@@ -48,6 +48,12 @@ public class CinamaticMovement : MonoBehaviour
     {
         if(anim)
             link.SetBool(dTag, true);
+    }
+
+    public void SetSmoking()
+    {
+        if (anim)
+            link.SetBool("Smoking", true);
     }
 
 }

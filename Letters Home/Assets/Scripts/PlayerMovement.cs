@@ -37,7 +37,8 @@ public class PlayerMovement : MonoBehaviour
 
     [HideInInspector]
     public float climbSpeed = 1;
-    private bool precrawl;
+    [HideInInspector]
+    public bool precrawl;
 
     private bool lb;
     private bool crb;
@@ -54,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool falling;
     public bool canDie = false;
+    public GameObject cigarette;
 
     // Start is called before the first frame update
     void Start()
@@ -120,6 +122,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 MoveVector += new Vector3(Input.GetAxis("Horizontal") * MoveSpeed, 0, Input.GetAxis("Vertical") * MoveSpeed);
                 me.transform.position += new Vector3(MoveVector.x, MoveVector.y, MoveVector.z) * Time.deltaTime;
+
+                if (Input.anyKeyDown && cigarette)
+                {
+                    Anim.SetBool("Smoking", false);
+                    cigarette.SetActive(false);
+                }
 
                 if (Input.GetButton("Crawl") && !crb && !forcedCrawl)
                 {
@@ -305,6 +313,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (col.gameObject.tag == "Vaultable")
         {
+            UI_InvFinder.me.nearItem = true;
+            UI_InvFinder.me.messageText.text = "PRESS SPACE TO VAULT";
             canVault = true;
             VaultPos = col.gameObject.GetComponent<Vaultable>().VaultEndpoint;
             totalVaultTime = col.gameObject.GetComponent<Vaultable>().vaultTime;
@@ -347,6 +357,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (col.gameObject.tag == "Vaultable")
         {
+            UI_InvFinder.me.nearItem = false;
             canVault = false;
         }
         if (col.gameObject.tag == "Crawl")
@@ -378,7 +389,17 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+    public void ToggleSmoke()
+    {
+        Anim.SetBool("Smoking", true);
+        if(cigarette)
+            cigarette.SetActive(true);
+    }
+
 }
+
+
+
 
 
 [System.Serializable]
