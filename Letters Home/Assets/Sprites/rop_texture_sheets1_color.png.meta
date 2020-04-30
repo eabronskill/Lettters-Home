@@ -1,0 +1,2503 @@
+fileFormatVersion: 2
+guid: 699d233a2073ced468eecc1883cab72f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8036718273578368450
+    second: rop_texture_sheets1_color_0
+  - first:
+      213: -1392287570351977227
+    second: rop_texture_sheets1_color_1
+  - first:
+      213: 6267202630379036542
+    second: rop_texture_sheets1_color_2
+  - first:
+      213: -3866116727295726497
+    second: rop_texture_sheets1_color_3
+  - first:
+      213: 712145405017804207
+    second: rop_texture_sheets1_color_4
+  - first:
+      213: 7019817336672942586
+    second: rop_texture_sheets1_color_5
+  - first:
+      213: -8770900416829281577
+    second: rop_texture_sheets1_color_6
+  - first:
+      213: -1208454507991372711
+    second: rop_texture_sheets1_color_7
+  - first:
+      213: -7319869693561149539
+    second: rop_texture_sheets1_color_8
+  - first:
+      213: 1017884701958188477
+    second: rop_texture_sheets1_color_9
+  - first:
+      213: 2335220717521705320
+    second: rop_texture_sheets1_color_10
+  - first:
+      213: -7548287866450796816
+    second: rop_texture_sheets1_color_11
+  - first:
+      213: 8307495894985907295
+    second: rop_texture_sheets1_color_12
+  - first:
+      213: 1703651148732837388
+    second: rop_texture_sheets1_color_13
+  - first:
+      213: 2027556679292435569
+    second: rop_texture_sheets1_color_14
+  - first:
+      213: 1478323051816973351
+    second: rop_texture_sheets1_color_15
+  - first:
+      213: 9005256002842653639
+    second: rop_texture_sheets1_color_16
+  - first:
+      213: -7001301204227032015
+    second: rop_texture_sheets1_color_17
+  - first:
+      213: -6424120457753858963
+    second: rop_texture_sheets1_color_18
+  - first:
+      213: 2433652801940320731
+    second: rop_texture_sheets1_color_19
+  - first:
+      213: -1731364668752726956
+    second: rop_texture_sheets1_color_20
+  - first:
+      213: 5717507863016279592
+    second: rop_texture_sheets1_color_21
+  - first:
+      213: 5369398734222179209
+    second: rop_texture_sheets1_color_22
+  - first:
+      213: 5637719031425169905
+    second: rop_texture_sheets1_color_23
+  - first:
+      213: -7900031978487957168
+    second: rop_texture_sheets1_color_24
+  - first:
+      213: 9020651919682525331
+    second: rop_texture_sheets1_color_25
+  - first:
+      213: 3415831916774975490
+    second: rop_texture_sheets1_color_26
+  - first:
+      213: -5585426834266489768
+    second: rop_texture_sheets1_color_27
+  - first:
+      213: 7842560486104181570
+    second: rop_texture_sheets1_color_28
+  - first:
+      213: -5689443906928939963
+    second: rop_texture_sheets1_color_29
+  - first:
+      213: -3234059992189749928
+    second: rop_texture_sheets1_color_30
+  - first:
+      213: -2837606259159196588
+    second: rop_texture_sheets1_color_31
+  - first:
+      213: 2439730162840343742
+    second: rop_texture_sheets1_color_32
+  - first:
+      213: 4143080647997499922
+    second: rop_texture_sheets1_color_33
+  - first:
+      213: 1787966422032790767
+    second: rop_texture_sheets1_color_34
+  - first:
+      213: 1295571166147969754
+    second: rop_texture_sheets1_color_35
+  - first:
+      213: 19815703789247934
+    second: rop_texture_sheets1_color_36
+  - first:
+      213: 3744374359152943608
+    second: rop_texture_sheets1_color_37
+  - first:
+      213: 6998106546305312338
+    second: rop_texture_sheets1_color_38
+  - first:
+      213: -7311014228092028008
+    second: rop_texture_sheets1_color_39
+  - first:
+      213: 7207482224495078207
+    second: rop_texture_sheets1_color_40
+  - first:
+      213: 4263992667469953925
+    second: rop_texture_sheets1_color_41
+  - first:
+      213: -8094506065861715383
+    second: rop_texture_sheets1_color_42
+  - first:
+      213: 3649248141499092532
+    second: rop_texture_sheets1_color_43
+  - first:
+      213: -1841021742410562928
+    second: rop_texture_sheets1_color_44
+  - first:
+      213: 8335864680276743766
+    second: rop_texture_sheets1_color_45
+  - first:
+      213: 2832710213800957618
+    second: rop_texture_sheets1_color_46
+  - first:
+      213: -3335159342795485552
+    second: rop_texture_sheets1_color_47
+  - first:
+      213: -1205401908266343117
+    second: rop_texture_sheets1_color_48
+  - first:
+      213: -7103366175767135720
+    second: rop_texture_sheets1_color_49
+  - first:
+      213: 9165449427634547841
+    second: rop_texture_sheets1_color_50
+  - first:
+      213: 5441680106628827460
+    second: rop_texture_sheets1_color_51
+  - first:
+      213: -8141249203765171328
+    second: rop_texture_sheets1_color_52
+  - first:
+      213: -7326258343102385892
+    second: rop_texture_sheets1_color_53
+  - first:
+      213: 8398968685372000783
+    second: rop_texture_sheets1_color_54
+  - first:
+      213: -203875260380324911
+    second: rop_texture_sheets1_color_55
+  - first:
+      213: 4690442028711048068
+    second: rop_texture_sheets1_color_56
+  - first:
+      213: 452393973954665808
+    second: rop_texture_sheets1_color_57
+  - first:
+      213: 1332230041010676157
+    second: rop_texture_sheets1_color_58
+  - first:
+      213: 5885297702462776854
+    second: rop_texture_sheets1_color_59
+  - first:
+      213: 1966173926171855950
+    second: rop_texture_sheets1_color_60
+  - first:
+      213: -1417983503799028222
+    second: rop_texture_sheets1_color_61
+  - first:
+      213: -9095037329515486529
+    second: rop_texture_sheets1_color_62
+  - first:
+      213: -8400881343434663282
+    second: rop_texture_sheets1_color_63
+  - first:
+      213: -7461053261736763594
+    second: rop_texture_sheets1_color_64
+  - first:
+      213: 6389910796661862928
+    second: rop_texture_sheets1_color_65
+  - first:
+      213: -2141615316975036520
+    second: rop_texture_sheets1_color_66
+  - first:
+      213: 16575689916349764
+    second: rop_texture_sheets1_color_67
+  - first:
+      213: 8039273555855607100
+    second: rop_texture_sheets1_color_68
+  - first:
+      213: 7145612105853024967
+    second: rop_texture_sheets1_color_69
+  - first:
+      213: -2950461822049666003
+    second: rop_texture_sheets1_color_70
+  - first:
+      213: 6045933174122135872
+    second: rop_texture_sheets1_color_71
+  - first:
+      213: 4577573210801013243
+    second: rop_texture_sheets1_color_72
+  - first:
+      213: 5498486156430040562
+    second: rop_texture_sheets1_color_73
+  - first:
+      213: -3652096748447881337
+    second: rop_texture_sheets1_color_74
+  - first:
+      213: 8146249461912883535
+    second: rop_texture_sheets1_color_75
+  - first:
+      213: -8529002154463231591
+    second: rop_texture_sheets1_color_76
+  - first:
+      213: -666565015198573623
+    second: rop_texture_sheets1_color_77
+  - first:
+      213: -6912544053080267759
+    second: rop_texture_sheets1_color_78
+  - first:
+      213: 6092586116712321663
+    second: rop_texture_sheets1_color_79
+  - first:
+      213: -7514310925282178574
+    second: rop_texture_sheets1_color_80
+  - first:
+      213: -4944186968988851514
+    second: rop_texture_sheets1_color_81
+  - first:
+      213: -6429815201521636947
+    second: rop_texture_sheets1_color_82
+  - first:
+      213: 8338384845408755801
+    second: rop_texture_sheets1_color_83
+  - first:
+      213: -5928719687749111089
+    second: rop_texture_sheets1_color_84
+  - first:
+      213: -1119495444539110722
+    second: rop_texture_sheets1_color_85
+  - first:
+      213: 2398472760478735761
+    second: rop_texture_sheets1_color_86
+  - first:
+      213: 8129692071736731289
+    second: rop_texture_sheets1_color_87
+  - first:
+      213: 7430229500815476047
+    second: rop_texture_sheets1_color_88
+  - first:
+      213: 6162172949511925342
+    second: rop_texture_sheets1_color_89
+  - first:
+      213: -30431333124846548
+    second: rop_texture_sheets1_color_90
+  - first:
+      213: 7051942341876599715
+    second: rop_texture_sheets1_color_91
+  - first:
+      213: -3971787639242393724
+    second: rop_texture_sheets1_color_92
+  - first:
+      213: 4173577389934051899
+    second: rop_texture_sheets1_color_93
+  - first:
+      213: -5067528077956070869
+    second: rop_texture_sheets1_color_94
+  - first:
+      213: 4259455937990347021
+    second: rop_texture_sheets1_color_95
+  - first:
+      213: -1015577763012461963
+    second: rop_texture_sheets1_color_96
+  - first:
+      213: -1222118770313375344
+    second: rop_texture_sheets1_color_97
+  - first:
+      213: 4320983261226830916
+    second: rop_texture_sheets1_color_98
+  - first:
+      213: -2351127900919346814
+    second: rop_texture_sheets1_color_99
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873595c1ec96a0c4ba28485f2b20a4ed
+      internalID: -8036718273578368450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_1
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b0b2d35930db94597c71226f147b8b
+      internalID: -1392287570351977227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_2
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61249bfbc47ab2a4eb29016c93aa7fa1
+      internalID: 6267202630379036542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_3
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d405d717ede01224dbe9b74febd94bc6
+      internalID: -3866116727295726497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_4
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d6e12dc16cbca94a977660bc90e701a
+      internalID: 712145405017804207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_5
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed78ac3f69a4bf643bdac1784317d5c3
+      internalID: 7019817336672942586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_6
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd0ee501f1607347851dcd23ef399f6
+      internalID: -8770900416829281577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_7
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517517c8fc1894445bd7319dea96239a
+      internalID: -1208454507991372711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_8
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c0df7707f9ab848a919f7fbadf70fe
+      internalID: -7319869693561149539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_9
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 7372.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3250cf89446fb84409e7366a6e439a26
+      internalID: 1017884701958188477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbebd1110fad4fe43882252a05331467
+      internalID: 2335220717521705320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_11
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2120e4f32673f8345a4c67e23ad4fcb5
+      internalID: -7548287866450796816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_12
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66757e29a498ef146bc89e81c4060129
+      internalID: 8307495894985907295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_13
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4d9d5661d01d94a8abea40b8d441c6
+      internalID: 1703651148732837388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_14
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba0ac3ef1965a542a5860aa685e6978
+      internalID: 2027556679292435569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_15
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6960b19ff4de146b85fb88ddd226b2
+      internalID: 1478323051816973351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_16
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10ab5531bd2d124c8faaa4c968eb87c
+      internalID: 9005256002842653639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_17
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416cb90fbf2cff846bba3b7dfc0f3ebe
+      internalID: -7001301204227032015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_18
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6209b656513ff5a41be846d15a38856b
+      internalID: -6424120457753858963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_19
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 6553.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f29bbe18dde7642988931453e54ea9
+      internalID: 2433652801940320731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ab1aa2ab9a8b1408fcc9b742e85c55
+      internalID: -1731364668752726956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_21
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fe17dcb72374e459b5b749176e3b9c
+      internalID: 5717507863016279592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_22
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d872273c1d2b014fa5fcb42f30d5c91
+      internalID: 5369398734222179209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_23
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b731fd1622faf499e4e1cb49fa7904
+      internalID: 5637719031425169905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_24
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f578aaaf61a641e4ea2101df8541a515
+      internalID: -7900031978487957168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_25
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da6d575e56fc2648b7587d3b29923e6
+      internalID: 9020651919682525331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_26
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1b5614e6bbc26342872adb249ffe1e0
+      internalID: 3415831916774975490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_27
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c5798f0553f724bac2e09bfed316cb
+      internalID: -5585426834266489768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_28
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e7d4a8fce089440ac301db6e83cbb5
+      internalID: 7842560486104181570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_29
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 5734.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a8860db77e66245adcd44b9fd26782
+      internalID: -5689443906928939963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e1121f4b83e4244af13415473aa17f
+      internalID: -3234059992189749928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_31
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2c7ecb1a7c2104c8ac16106c019517
+      internalID: -2837606259159196588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_32
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0091ae6694ed6649bbf6e47aec5d3d0
+      internalID: 2439730162840343742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_33
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4d5865b01392b43992155fc219a7e4
+      internalID: 4143080647997499922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_34
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bea7e36c5995f48ad647d7d781fb7d
+      internalID: 1787966422032790767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_35
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3716e889dd78b8d489c0ba8caa093ab1
+      internalID: 1295571166147969754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_36
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a4f331153d3e6439b7bcdd832a2a8d
+      internalID: 19815703789247934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_37
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c31434f3997b6468f2fda8a5a9907e
+      internalID: 3744374359152943608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_38
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364fa1e40848be14da615d7dcd739e8c
+      internalID: 6998106546305312338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_39
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 4915.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64eeb7b399742448925d9f899f828d3
+      internalID: -7311014228092028008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899911846e507274ab3323ab7b420274
+      internalID: 7207482224495078207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_41
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2ac203194020e4cbfa4b6b7c09a954
+      internalID: 4263992667469953925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_42
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e286806bceff7ed4389ce4788c6fdd1a
+      internalID: -8094506065861715383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_43
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49d27df4430b6f43a2c9433f6be89db
+      internalID: 3649248141499092532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_44
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e558a58fc6030b94b853d58895fd179c
+      internalID: -1841021742410562928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_45
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607112c13ffd69f4ca598ead62965647
+      internalID: 8335864680276743766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_46
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 248e12961a4fa55498d01609d4a10c71
+      internalID: 2832710213800957618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_47
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f6b8f2b03e7054e9931c3d9b282230
+      internalID: -3335159342795485552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_48
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2adcbcf84d1d742b29ace343a93713
+      internalID: -1205401908266343117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_49
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 4096.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040ba33519eb8dc4387246eaa0543cb9
+      internalID: -7103366175767135720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8cf92f81369b04a9a69c5494382009
+      internalID: 9165449427634547841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_51
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78aeed13981bfd347ab3982dfeeb5e3d
+      internalID: 5441680106628827460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_52
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76aec675fcedf134da504b9eeb735e8c
+      internalID: -8141249203765171328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_53
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543c4138819ad3a4a9e56ad549013348
+      internalID: -7326258343102385892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_54
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7923c00ded841348a853eec4fc05e69
+      internalID: 8398968685372000783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_55
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3646e2d7c84b67b4c83eaf64fe2e8f63
+      internalID: -203875260380324911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_56
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b917c118fc3b4641ba19a00c751ae31
+      internalID: 4690442028711048068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_57
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c978f9998a76b0408b6a93cbd6dc8f6
+      internalID: 452393973954665808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_58
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb013013d4f39445bb050be13749bb4
+      internalID: 1332230041010676157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_59
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 3277.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bf328b0abf16346a7e3ec2b37ece94
+      internalID: 5885297702462776854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b63d01661ba2a428b23e88b3fe801d
+      internalID: 1966173926171855950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_61
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a3b0ea7e14c8e04eae49ea9f82fd99b
+      internalID: -1417983503799028222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_62
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8008c79cb01b5499e0b0063f9bdfe5
+      internalID: -9095037329515486529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_63
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c002860fec901b344ae9d3198d86c07b
+      internalID: -8400881343434663282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_64
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ac51e1dec271e47b7213b7c1752541
+      internalID: -7461053261736763594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_65
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414286dee2b8ed44d92c8fff219c7455
+      internalID: 6389910796661862928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_66
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce45a6c574fa264458e9f3059ae70829
+      internalID: -2141615316975036520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_67
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dd51a2fe8630a4984d3ae9afed2990
+      internalID: 16575689916349764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_68
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3662cbeb430a22f42a605b391df0c1c3
+      internalID: 8039273555855607100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_69
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 2458.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10458f22a8e3eda47bf90cb94fa374a0
+      internalID: 7145612105853024967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6074ad6f342d5643bb1f6bc598ccaa7
+      internalID: -2950461822049666003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_71
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629d05aa17cc0a8468c64f6d0578f603
+      internalID: 6045933174122135872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_72
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb5b49a5edd2d34c87e529b97268eb2
+      internalID: 4577573210801013243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_73
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957d1e1ce656f62499c2d16f66eed35a
+      internalID: 5498486156430040562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_74
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d85b4def2fd5a947b0cab7dd8414dfd
+      internalID: -3652096748447881337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_75
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d607c3bc0bb683b4b89b327b80e95cd0
+      internalID: 8146249461912883535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_76
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829ab9227c410494cbfe01f829a70340
+      internalID: -8529002154463231591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_77
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf473bffdb2b80242844374a92d2265e
+      internalID: -666565015198573623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_78
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e23c2bd1e26874bafad9e5a78135d9
+      internalID: -6912544053080267759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_79
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 1639.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38aeef2fccf7e654d9966b549ad1507b
+      internalID: 6092586116712321663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5cf9373a6eb52468aee7006bcb62c7
+      internalID: -7514310925282178574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_81
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a395600428a4119429a89acd7edcfe1e
+      internalID: -4944186968988851514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_82
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a90ad9bb0bcc764885bc8354ace3d00
+      internalID: -6429815201521636947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_83
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbca50998b88f994aa5c72c657e63642
+      internalID: 8338384845408755801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_84
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1341650dd9a064881298c048ec7f0d
+      internalID: -5928719687749111089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_85
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51976470aecee664aa0a60ed72997080
+      internalID: -1119495444539110722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_86
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04cbf4106e56dae43a2ebdfcab929e3c
+      internalID: 2398472760478735761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_87
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739a06d5bded3694f8ee66b425266a10
+      internalID: 8129692071736731289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_88
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aff472eeb6b1d14f8ab7672a7fe4097
+      internalID: 7430229500815476047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_89
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 820.8
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784d3c59c48035d40bd23af43be5c5e1
+      internalID: 6162172949511925342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fbdaf703806194ab2b3b74f2df3c57
+      internalID: -30431333124846548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_91
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862782339ea38054cb7b111cbd349e18
+      internalID: 7051942341876599715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_92
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7733224397bdc84398273893ec341f7
+      internalID: -3971787639242393724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_93
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b24a7e0a8c8b994885a61c5c6777f2f
+      internalID: 4173577389934051899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_94
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd608ff9d8f624c4a945ec442be4b9c3
+      internalID: -5067528077956070869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_95
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df312601d382255478b7c24d338d23b4
+      internalID: 4259455937990347021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_96
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf0ecc531c44294f994b7157e02d023
+      internalID: -1015577763012461963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_97
+      rect:
+        serializedVersion: 2
+        x: 5733
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6eb770f35ff8348a01fcd90eb24dac
+      internalID: -1222118770313375344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_98
+      rect:
+        serializedVersion: 2
+        x: 6552
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1249836fb48d94e40b4319c41ff68052
+      internalID: 4320983261226830916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rop_texture_sheets1_color_99
+      rect:
+        serializedVersion: 2
+        x: 7371
+        y: 1.7999878
+        width: 819.2
+        height: 819.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2ba0f975e4d5b4ca60cbf05b3bce09
+      internalID: -2351127900919346814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
