@@ -50,5 +50,6 @@ public class DeathDetector : MonoBehaviour
         narration.gameObject.SetActive(true);
         narration.PlayOneShot(clip);
         PlayerPrefs.SetInt("C" + unlockedLetter, 1);
+        e.Invoke();
     }
 }
