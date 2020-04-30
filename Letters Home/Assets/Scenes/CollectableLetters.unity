@@ -358,7 +358,7 @@ MonoBehaviour:
   delay: 20
   Vocals: {fileID: 8300000, guid: 9d373267a4fa2114c89bb88f7ca58414, type: 3}
   VocalEmitter: {fileID: 1141823524}
-  UnlockKey: 0
+  UnlockKey: 8
   me: {fileID: 0}
 --- !u!114 &244122709
 MonoBehaviour:
@@ -721,7 +721,7 @@ MonoBehaviour:
   delay: 20
   Vocals: {fileID: 8300000, guid: c5f26157580ac864988c6e7149fb76cb, type: 3}
   VocalEmitter: {fileID: 1141823524}
-  UnlockKey: 0
+  UnlockKey: 2
   me: {fileID: 0}
 --- !u!114 &590400246
 MonoBehaviour:
@@ -1004,7 +1004,7 @@ MonoBehaviour:
   delay: 20
   Vocals: {fileID: 8300000, guid: 20e9d22d0570d924aade6b1d67497b42, type: 3}
   VocalEmitter: {fileID: 1141823524}
-  UnlockKey: 0
+  UnlockKey: 6
   me: {fileID: 0}
 --- !u!114 &964749900
 MonoBehaviour:
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   delay: 20
   Vocals: {fileID: 8300000, guid: b301504067bc2ac4e92ae0bebbba265c, type: 3}
   VocalEmitter: {fileID: 1141823524}
-  UnlockKey: 0
+  UnlockKey: 5
   me: {fileID: 0}
 --- !u!114 &1110600995
 MonoBehaviour:
@@ -1677,6 +1677,212 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4882db0eb15b1044e900f081b675113d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1162427608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162427609}
+  - component: {fileID: 1162427613}
+  - component: {fileID: 1162427612}
+  - component: {fileID: 1162427611}
+  - component: {fileID: 1162427610}
+  m_Layer: 5
+  m_Name: LetterBonus (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1162427609
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162427608}
+  m_LocalRotation: {x: -0, y: -0, z: -0.21679379, w: 0.97621745}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.061021, y: 0.97727495, z: 0.97727495}
+  m_Children: []
+  m_Father: {fileID: 1927899493}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -25.042002}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 164, y: -157}
+  m_SizeDelta: {x: 300, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1162427610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162427608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fdef8d16799f641956f65da7b04268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LetterText: {fileID: 1141823523}
+  LetterString: "The Stephen Brown Series\r\nDear Mother\r\nJust a line to let you
+    know that I am getting on all right in the Army. I hope that you are all well
+    as I am myself. I am very sorry for what I done when I was at home and will pay
+    you back when I get some more pay. I like the Army very well for I am going to
+    join the Regulars when I have done my time in the Reserve. Then I shall be able
+    to pay you back for I get 30/- as a bounty. I hope you and Dad will forgive me
+    for what I done when at home. I cannot write no more at present for I have to
+    do some more work. Trusting you will forgive me. I remain your son,\r\nStephen
+    Brown\r\n\r\nDear Mother\r\nJust a line to let you know that I am getting on alright.
+    I hope you are the same. I am sorry I did not write before. We are so busy that
+    I have had no time. We are confined to barracks so I can not get a stamp\u2026
+    I hope Tommy and Archie Hammond are all right. Give my love to Kitty, Lillie,
+    Maggie, Freddy, and Ted. I hope Dad is quite well\u2026 I thank you for forgiving
+    me. I know I don\u2019t deserve it. Tell Auntie Tot and Uncle Bob that I am getting
+    on fine. Is Uncle Bob been called up yet? We are calling all our Reservists up
+    and those on leave. This is all at present. \r\nI remain your loving son, Stephen\r\n\r\nDear
+    Mother\r\nJust a line to let you know that I got the fags on Tuesday. I thank
+    you very much for sending them\u2026 They have stopped the weekend passes as there
+    are a lot of absences, but I shall ask the Captain for permission to come on a
+    pass. We are going to the front on the 19 of November. Dear mother, do not worry
+    about me for by God\u2019s help I shall come home well. Give my love to Lillie,
+    Kitty and Freddie and tell him I will come and see him by and by. You will receive
+    3/0 shilling from me and the same from the War Office which will make six all
+    together. Give my love to all\u2026 This is all at present. \r\nSo goodbye from
+    your loving son, Steve\r\n\r\n\r\nDear Mother\r\nJust a line to let you know that
+    I am alright. I am enjoying myself\u2026 I will soon be home.\r\nLove from Steve\r\n\r\n\r\nDear
+    Mother\r\nJust a line to let you know that I am quite well. I am for the front
+    on Tuesday. But if you write to the Commanding Officer and say I am only seventeen
+    it will stop me from going. Get it here before Tuesday for I cannot get a pass
+    to come and see you. Don\u2019t forget.\r\nFrom Stephen\r\n\r\n\r\nMother\r\nJust
+    left for France\r\nStephen\r\n\r\n\r\nDear Mother\r\nJust a line to let you know
+    that I arrived quite safe. I hope you are quite well as it leaves me the same.
+    Give my love to all at home. \r\nFrom your ever loving son,\r\nStephen\r\n\r\n\r\nDear
+    Mother\r\nJust a line to let you know that I sent you all a photo of myself outside
+    a tent door with two of my mates. Hope you will get them safe. Hoping you are
+    in the best of health as I am myself. Goodbye for the present. I remain yours
+    truly,\r\nStephen"
+  delay: 20
+  Vocals: {fileID: 8300000, guid: aac07d1024c0f554db5849322c87990c, type: 3}
+  VocalEmitter: {fileID: 1141823524}
+  UnlockKey: 10
+  me: {fileID: 0}
+--- !u!114 &1162427611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162427608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9716981, g: 0.96704775, b: 0.5729352, a: 1}
+    m_PressedColor: {r: 0.6656373, g: 0.9339623, b: 0.6123621, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1162427612}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1162427610}
+        m_MethodName: SendDescriptionAndSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1141823521}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1162427612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162427608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: d1907d5c30d50de48b7f0159cbe8c43d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1162427613
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162427608}
+  m_CullTransparentMesh: 0
 --- !u!1 &1218279494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +2028,7 @@ MonoBehaviour:
   delay: 20
   Vocals: {fileID: 8300000, guid: 6f473b5d9c3020c48aebe034b6cb585f, type: 3}
   VocalEmitter: {fileID: 1141823524}
-  UnlockKey: 0
+  UnlockKey: 9
   me: {fileID: 0}
 --- !u!114 &1227945953
 MonoBehaviour:
@@ -1976,6 +2182,8 @@ RectTransform:
   - {fileID: 244122707}
   - {fileID: 16847157}
   - {fileID: 1227945951}
+  - {fileID: 1927899493}
+  - {fileID: 1556819048}
   m_Father: {fileID: 371746378}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2043,6 +2251,185 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1356709892}
+  m_CullTransparentMesh: 0
+--- !u!1 &1556819047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556819048}
+  - component: {fileID: 1556819052}
+  - component: {fileID: 1556819051}
+  - component: {fileID: 1556819050}
+  - component: {fileID: 1556819049}
+  m_Layer: 5
+  m_Name: LetterBonus (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1556819048
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556819047}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1356709893}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1556819049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556819047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31fdef8d16799f641956f65da7b04268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LetterText: {fileID: 1141823523}
+  LetterString: "Letter to a Husband \u2013 Frau S\r\nDear Leader of the Company!\r\nI,
+    the signer below, have a request to make of you. Although my husband has only
+    been in the field for four months, I would like to ask you to grant him a leave
+    of absence, namely, because of our sexual relationship. \r\nI would like to have
+    my husband just once for the satisfaction of my natural desires. I just can\u2019t
+    live like this any more. I can\u2019t stand it. It is, of course, impossible for
+    me to be satisfied in other ways, firstly, because of all the children and secondly,
+    because I do not want to betray my husband. So I would like to ask you very kindly
+    to grant my request. I will then be able to carry on until we are victorious.
+    \r\nWith all reverence, \r\nFrau S\r"
+  delay: 20
+  Vocals: {fileID: 8300000, guid: 98abfb7eddd10ce4492f47148d16a900, type: 3}
+  VocalEmitter: {fileID: 1141823524}
+  UnlockKey: 11
+  me: {fileID: 0}
+--- !u!114 &1556819050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556819047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.972549, g: 0.57254905, b: 0.71509606, a: 1}
+    m_PressedColor: {r: 0.6656373, g: 0.9339623, b: 0.6123621, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0, g: 0, b: 0, a: 1}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1556819051}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1556819049}
+        m_MethodName: SendDescriptionAndSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1141823521}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1141823532}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1556819051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556819047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.96185714, b: 0.7311321, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1f1f988bbea650b4c9307005994600d9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1556819052
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556819047}
   m_CullTransparentMesh: 0
 --- !u!1 &1724571539
 GameObject:
@@ -2200,7 +2587,7 @@ MonoBehaviour:
   delay: 20
   Vocals: {fileID: 8300000, guid: ba63d67000c0e8941ab4a99c34fdbbbe, type: 3}
   VocalEmitter: {fileID: 1141823524}
-  UnlockKey: 0
+  UnlockKey: 4
   me: {fileID: 0}
 --- !u!114 &1834315641
 MonoBehaviour:
@@ -2314,6 +2701,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834315638}
   m_CullTransparentMesh: 0
+--- !u!1 &1927899492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1927899493}
+  - component: {fileID: 1927899495}
+  - component: {fileID: 1927899494}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1927899493
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927899492}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1162427609}
+  m_Father: {fileID: 1356709893}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1927899494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927899492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 334192474718896800, guid: 41742c66bbc8f1c47befbdb0d2e64e1a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1927899495
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927899492}
+  m_CullTransparentMesh: 0
 --- !u!1 &2066211110
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,7 +2844,7 @@ MonoBehaviour:
   delay: 20
   Vocals: {fileID: 8300000, guid: cf62180b4d303b445842601a69640c95, type: 3}
   VocalEmitter: {fileID: 1141823524}
-  UnlockKey: 0
+  UnlockKey: 7
   me: {fileID: 0}
 --- !u!114 &2066211113
 MonoBehaviour:
@@ -2570,7 +3031,7 @@ MonoBehaviour:
   delay: 20
   Vocals: {fileID: 8300000, guid: 721454f39dd18c84db83f486156ae613, type: 3}
   VocalEmitter: {fileID: 1141823524}
-  UnlockKey: 0
+  UnlockKey: 3
   me: {fileID: 0}
 --- !u!114 &2127952791
 MonoBehaviour:
@@ -2743,7 +3204,7 @@ MonoBehaviour:
   delay: 10
   Vocals: {fileID: 8300000, guid: 36fb841f8cba2af4f864fe7c2ca39f2b, type: 3}
   VocalEmitter: {fileID: 1141823524}
-  UnlockKey: 0
+  UnlockKey: 1
   me: {fileID: 0}
 --- !u!114 &2134174470
 MonoBehaviour:
