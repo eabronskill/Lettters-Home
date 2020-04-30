@@ -43,7 +43,10 @@ public class VolumeControlNoahPrototype : MonoBehaviour
                 player.Stop();
                 player.volume = 0.6f;
                 storedClip = player.clip;
-                player.clip = DeathSound;
+                if (DeathSound)
+                {
+                    player.clip = DeathSound;
+                }
                 player.Play();
                 hasfired = true;
             }

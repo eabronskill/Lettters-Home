@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
     private float ccts = 0f;
 
     private bool falling;
+    public bool canDie = false;
 
     // Start is called before the first frame update
     void Start()
@@ -279,7 +280,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if (m_dead == true)
+            if (m_dead == true && canDie)
             {
                 if (precrawl)
                 {

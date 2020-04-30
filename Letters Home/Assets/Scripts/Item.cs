@@ -60,7 +60,7 @@ public class Item : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Player = other.gameObject;
-            UI_InvFinder.me.messageText.text = "PRESS E TO PICKUP:" + Name;
+            UI_InvFinder.me.messageText.text = "PRESS E TO PICKUP: " + Name;
             UI_InvFinder.me.nearItem = true;
             canGrab = true;
 

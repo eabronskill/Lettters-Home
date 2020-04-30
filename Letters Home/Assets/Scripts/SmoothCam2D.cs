@@ -26,7 +26,7 @@ public class SmoothCam2D : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, new Vector3(Target.transform.position.x + Offset.x,Target.transform.position.y + Offset.y,-10), 0.02f);
+        transform.position = Vector3.Lerp(transform.position, new Vector3(Target.transform.position.x + Offset.x,Target.transform.position.y + Offset.y,-10), 0.05f);
         if(transform.position.x < BoundsLR[0])
         {
             transform.position = new Vector3(BoundsLR[0], transform.position.y, transform.position.z);
