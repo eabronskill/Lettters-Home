@@ -29,6 +29,8 @@ public class Player : MonoBehaviour
     public int ammo = 0;
     public int Letters = 0;
 
+    public int collectedLetters;
+
     static bool killCurrentPlayer = false;
     public static Player me;
 

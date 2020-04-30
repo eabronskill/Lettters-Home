@@ -8,12 +8,16 @@ public class Collectable : MonoBehaviour
     public int Number = 0;
     public string Prefix = "";
     public Canvas LetterCanvas;
+    public Canvas DialogueCanvas;
     public Text letterTextBox;
     [Multiline]
     public string letterContent;
     public AudioSource narration;
     public AudioClip clip;
     public float textEatingSpeed;
+    private Player player;
+    private updateCollectUI collectedUI;
+    private bool hasPickedUp = false;
 
 
     // Start is called before the first frame update
@@ -24,11 +28,13 @@ public class Collectable : MonoBehaviour
             //Uncomment before final build!
             //Destroy(this.gameObject);
         }
+        collectedUI = DialogueCanvas.GetComponentInChildren<updateCollectUI>();
     }
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Player")
         {
+            player = col.gameObject.GetComponent<Player>();
             UI_InvFinder.me.nearItem = true;
             UI_InvFinder.me.messageText.text = "press 'E' to pickup Letter " + Number;
         }
@@ -37,9 +43,10 @@ public class Collectable : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) && !hasPickedUp)
             {
                 Save();
+                hasPickedUp = true;
                 UI_InvFinder.me.nearItem = false;
                 letterTextBox.text = letterContent;
                 letterTextBox.gameObject.GetComponent<WriteText>().enabled = true;
@@ -48,7 +55,8 @@ public class Collectable : MonoBehaviour
                 LetterCanvas.gameObject.GetComponent<LetterPopup>().switchButtons();
                 narration.gameObject.SetActive(true);
                 narration.PlayOneShot(clip);
-                //Destroy(this.gameObject); //coroutine 
+                player.collectedLetters += 1;
+                Destroy(this.gameObject, 0.5f); //coroutine 
             }
         }
     }
@@ -56,6 +64,7 @@ public class Collectable : MonoBehaviour
     {
         if (col.gameObject.tag == "Player")
         {
+            player = null;
             UI_InvFinder.me.nearItem = false;
         }
     }

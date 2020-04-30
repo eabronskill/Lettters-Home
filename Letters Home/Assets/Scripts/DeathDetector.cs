@@ -10,6 +10,8 @@ public class DeathDetector : MonoBehaviour
     public Player Trigger;
     public GameObject Settee;
     public Text letterTextBox;
+    public Button disableButton;
+    public Button exitButton;
     [Multiline]
     public string endLetterContent;
     public float delayTime = 2f;
@@ -39,10 +41,11 @@ public class DeathDetector : MonoBehaviour
 
     public void delay()
     {
+        exitButton.gameObject.SetActive(true);
+        disableButton.gameObject.SetActive(false);
         letterTextBox.text = endLetterContent;
         Settee.GetComponentInChildren<WriteText>().delay = textEatingSpeed;
         Settee.GetComponentInChildren<WriteText>().enabled = true;
-        //Settee.GetComponentInChildren<Text>().enabled = true;
         Settee.SetActive(true);
         narration.gameObject.SetActive(true);
         narration.PlayOneShot(clip);
