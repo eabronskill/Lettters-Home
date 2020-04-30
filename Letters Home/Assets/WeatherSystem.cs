@@ -20,7 +20,7 @@ public class WeatherSystem : MonoBehaviour
     void Start()
     {
         RandomTimer = Time.time + 5f;
-        aud.clip = Rain;
+        ///aud.clip = Rain;
     }
 
     // Update is called once per frame
@@ -32,9 +32,9 @@ public class WeatherSystem : MonoBehaviour
             {
                 RandomTimer = Time.time + Random.Range(lightningTimes.x, lightningTimes.y);
 
-                 aud.PlayOneShot(ThunderClap);
-                 Lighting.intensity = 3f;
-                 Invoke("TOff1", 0.2f);
+                aud.PlayOneShot(ThunderClap);
+                Lighting.intensity = 3f;
+                Invoke("TOff1", 0.2f);
             }
             if (!RainEffect.activeInHierarchy)
             {

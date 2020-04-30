@@ -245,6 +245,7 @@ MonoBehaviour:
     - 4
     - 1.2
   curEvent: 0
+  canDie: 1
 --- !u!136 &207688192361688175
 CapsuleCollider:
   m_ObjectHideFlags: 0
