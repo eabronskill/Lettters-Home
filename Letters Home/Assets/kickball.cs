@@ -17,6 +17,11 @@ public class kickball : MonoBehaviour
 
     public void Kick(GameObject other)
     {
+        if (this.gameObject.GetComponent<Rigidbody>().isKinematic)
+        {
+            this.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+            this.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        }
         this.gameObject.GetComponent<Rigidbody>().AddForceAtPosition(Vector3.one * 2 * other.transform.localScale.x, other.transform.position, ForceMode.Impulse);
     }
 }
