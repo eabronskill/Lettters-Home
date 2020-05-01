@@ -26,7 +26,9 @@ public class Collectable : MonoBehaviour
         if (PlayerPrefs.HasKey("C" + Prefix + Number) && PlayerPrefs.GetInt("C" + Prefix + Number) == 1)
         {
             //Uncomment before final build!
-            //Destroy(this.gameObject);
+            SmoothCam2D.findCam.GetComponent<SmoothCam2D>().Target.GetComponent<Player>().collectedLetters++;
+            Destroy(this.gameObject, 0.5f);
+           
         }
         collectedUI = DialogueCanvas.GetComponentInChildren<updateCollectUI>();
     }

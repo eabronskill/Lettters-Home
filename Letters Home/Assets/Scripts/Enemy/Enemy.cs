@@ -110,24 +110,28 @@ public class Enemy : MonoBehaviour
                 patrollingLogic();
             }
 
-            if (ctimer < Time.time && !MaybeSmoke && !los.canSee)
+            if (ctimer < Time.time && !MaybeSmoke)
             {
-                if (Mathf.Abs(transform.position.x - ct) > 0.1f)
+                if (Mathf.Abs(transform.position.x - ct) > 0.1f && !los.canSee)
+                {
+
                     Anim.SetBool("Walkin", true);
+                    if (ct < transform.position.x)
+                    {
+                        Vector3 temp = new Vector3(0.0f - Mathf.Abs(enemySprite.transform.localScale.x), enemySprite.transform.localScale.y, enemySprite.transform.localScale.z);
+                        enemySprite.transform.localScale = temp;
+
+                    }
+                    if (ct > transform.position.x)
+                    {
+                        print(Mathf.Abs(enemySprite.transform.localScale.x));
+                        Vector3 temp = new Vector3(Mathf.Abs(enemySprite.transform.localScale.x), enemySprite.transform.localScale.y, enemySprite.transform.localScale.z);
+                        enemySprite.transform.localScale = temp;
+                    }
+                }
                 else
                     Anim.SetBool("Walkin", false);
-                if (ct < transform.position.x)
-                {
-                    Vector3 temp = new Vector3(0.0f - Mathf.Abs(enemySprite.transform.localScale.x), enemySprite.transform.localScale.y, enemySprite.transform.localScale.z);
-                    enemySprite.transform.localScale = temp;
-                    
-                }
-                if (ct > transform.position.x)
-                {
-                    print(Mathf.Abs(enemySprite.transform.localScale.x));
-                    Vector3 temp = new Vector3(Mathf.Abs(enemySprite.transform.localScale.x), enemySprite.transform.localScale.y, enemySprite.transform.localScale.z);
-                    enemySprite.transform.localScale = temp;
-                }
+                
                 ctimer = Time.time + 0.2f;
                 ct = transform.position.x;
             }
@@ -171,9 +175,31 @@ public class Enemy : MonoBehaviour
     /// </summary>
     private void patrollingLogic()
     {
+        if (!los.canSee)
+        {
+            agent.stoppingDistance = 0;
+
+        }
+        else if(Target != null)
+        {
+            if (Target.transform.position.x < transform.position.x)
+            {
+                Vector3 temp = new Vector3(Mathf.Abs(enemySprite.transform.localScale.x), enemySprite.transform.localScale.y, enemySprite.transform.localScale.z);
+                enemySprite.transform.localScale = temp;
+            }
+            else
+            {
+                    
+                Vector3 temp = new Vector3(0.0f - Mathf.Abs(enemySprite.transform.localScale.x), enemySprite.transform.localScale.y, enemySprite.transform.localScale.z);
+                enemySprite.transform.localScale = temp;
+
+
+            }
+        }
         // If this enemy can see the Player, stop patrolling and get ready to shoot.
         if (los.canSee && los.Target != null && !los.Target.GetComponent<Player>().GetDead())
         {
+
             print("Shooting Dude");
             Target = los.Target;
             patrol.isPatroling = false;
@@ -182,7 +208,7 @@ public class Enemy : MonoBehaviour
             Invoke("ShootTarget", domeTimer);
             Anim.SetBool("Walkin", false);
             agent.speed = 2;
-            agent.stoppingDistance = 8;
+            agent.stoppingDistance = 3;
             agent.SetDestination(Target.transform.position);
             if(Gun != null)
             {
@@ -196,16 +222,22 @@ public class Enemy : MonoBehaviour
             isSearching = false;
             isLooking = true;
             ltimer = Time.time + lookTime;
-            agent.ResetPath();
-            agent.stoppingDistance = 0;
+            // Go to the last seen location of the player.
+            agent.SetDestination(los.LastSeen);
             Anim.SetBool("Walkin", true);
+            if (Gun != null)
+            {
+                Gun.SetActive(false);
+                Anim.SetBool("Aiming", false);
+            }
         }
         // This enemy is at the last seen location of the Player, and is looking around for them.
         else if (!los.canSee && isLooking && Target != null && ltimer > Time.time)
         {
             // TODO
             // Looking Animation
-            Anim.SetBool("Walkin", false);
+            //Anim.SetBool("Walkin", false);
+            Anim.SetBool("Aiming", false);
         }
         // This enemy is at the last seen location of the Player, and has finished looking for them.
         else if (!los.canSee && isLooking && Target != null && Time.time > ltimer)
@@ -216,6 +248,7 @@ public class Enemy : MonoBehaviour
             Target = null;
             agent.speed = speed;
             Anim.SetBool("Walkin", true);
+            Anim.SetBool("Aiming", false);
         }
     }
 
@@ -245,8 +278,7 @@ public class Enemy : MonoBehaviour
         {
             isSearching = true;
             agent.speed = ganderSpeed;
-            // Go to the last seen location of the player.
-            agent.SetDestination(los.LastSeen);
+            
             if (Gun != null)
             {
                 Gun.SetActive(false);

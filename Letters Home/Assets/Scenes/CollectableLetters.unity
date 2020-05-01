@@ -432,7 +432,7 @@ MonoBehaviour:
     and the entire line greeted each other. For the rest of my life, I shall never
     forget this scene. Which goes to show that human feelings continue to go on, even
     if in these times, men do not know anything but killing and murdering. \r\n"
-  delay: 20
+  delay: 0
   Vocals: {fileID: 8300000, guid: 9d373267a4fa2114c89bb88f7ca58414, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 8
@@ -796,7 +796,7 @@ MonoBehaviour:
     Billy Hastings is quite fit and the only pal left. We have been resting since
     and getting information but by all reports we shall be up again soon. No rest
     for the wicked it is said, and if true we must surely be a bad lot.\r\n"
-  delay: 20
+  delay: 0
   Vocals: {fileID: 8300000, guid: c5f26157580ac864988c6e7149fb76cb, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 2
@@ -1079,7 +1079,7 @@ MonoBehaviour:
     I was not at home at the time. We have another now and I must try and get a photo
     of it and let you see what it is like. I must send you one of our mess dugout
     too.\r\n"
-  delay: 20
+  delay: 0
   Vocals: {fileID: 8300000, guid: 20e9d22d0570d924aade6b1d67497b42, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 6
@@ -1215,7 +1215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1110600993
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1230,10 +1230,10 @@ RectTransform:
   m_Father: {fileID: 1356709893}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1450, y: -120}
+  m_SizeDelta: {x: 300, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1110600994
 MonoBehaviour:
@@ -1280,7 +1280,7 @@ MonoBehaviour:
     if they heard Lord C Beresford was here & were trying for him, as only last week
     I saw he made a speech in England advocating the hanging of the Kaiser & his entourage
     after a trial for murder.\_\r\n"
-  delay: 20
+  delay: 0
   Vocals: {fileID: 8300000, guid: b301504067bc2ac4e92ae0bebbba265c, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 5
@@ -1844,7 +1844,7 @@ MonoBehaviour:
     a tent door with two of my mates. Hope you will get them safe. Hoping you are
     in the best of health as I am myself. Goodbye for the present. I remain yours
     truly,\r\nStephen"
-  delay: 20
+  delay: 0
   Vocals: {fileID: 8300000, guid: aac07d1024c0f554db5849322c87990c, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 10
@@ -2103,7 +2103,7 @@ MonoBehaviour:
     with rum, savoury, dry biscuits and caf\xE9 au rhum. This morning we came across
     a dead German. We had him buried properly and I got a couple of buttons off the
     poor devil. A weird Christmas, n\u2019est-ce pas?\r\n"
-  delay: 20
+  delay: 0
   Vocals: {fileID: 8300000, guid: 6f473b5d9c3020c48aebe034b6cb585f, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 9
@@ -2627,12 +2627,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.96185714, b: 0.7311321, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1f1f988bbea650b4c9307005994600d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61d9a5201f3e87a40bc973bd87201a91, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2803,7 +2803,7 @@ MonoBehaviour:
     time I shall be looking forward for a short leave for I have been here nearly
     three months now and we stand a good chance. Well I must now conclude\u2026Yours
     sincerely\r\nJack Symons\r\n"
-  delay: 20
+  delay: 0
   Vocals: {fileID: 8300000, guid: ba63d67000c0e8941ab4a99c34fdbbbe, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 4
@@ -3060,7 +3060,7 @@ MonoBehaviour:
     book when she was a girl like you. Write again soon, dear, + send another crayoning
     to help cover the sand bags. \r\nHeaps of love & kisses, which you must share
     with Mamma and Betty. \r\nFrom your ever loving Daddy. \r\n"
-  delay: 20
+  delay: 0
   Vocals: {fileID: 8300000, guid: cf62180b4d303b445842601a69640c95, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 7
@@ -3247,7 +3247,7 @@ MonoBehaviour:
     myself at times when the shells are dropping all around us and the air is whistling
     with them. \r\nGoodnight my darling. Longing and hoping for a letter from you
     tomorrow. Xxxx\r\n"
-  delay: 20
+  delay: 0
   Vocals: {fileID: 8300000, guid: 721454f39dd18c84db83f486156ae613, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 3
@@ -3420,7 +3420,7 @@ MonoBehaviour:
     I am for the front on Tuesday. But if you write to the Commanding Officer and
     say I am only seventeen it will stop me from going. Get it here before Tuesday
     for I cannot get a pass to come and see you.\n\nDon\u2019t forget.\nFrom Stephen "
-  delay: 10
+  delay: 0
   Vocals: {fileID: 8300000, guid: 36fb841f8cba2af4f864fe7c2ca39f2b, type: 3}
   VocalEmitter: {fileID: 1141823524}
   UnlockKey: 1

@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 962935807614926352}
   - component: {fileID: 7875317137474316568}
   m_Layer: 2
-  m_Name: EnemyBase 1
+  m_Name: GoodEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -833,7 +833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3944211114105025825
 Transform:
   m_ObjectHideFlags: 0
