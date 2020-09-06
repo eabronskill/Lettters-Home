@@ -16,11 +16,15 @@ public class WeatherSystem : MonoBehaviour
     public bool Raining;
     public Vector2 lightningTimes;
 
+    [Range(0f, 1.0f)]
+    public float thunderVol;
+
     // Start is called before the first frame update
     void Start()
     {
         RandomTimer = Time.time + 5f;
         ///aud.clip = Rain;
+        thunderVol = 1.0f;
     }
 
     // Update is called once per frame
@@ -32,7 +36,7 @@ public class WeatherSystem : MonoBehaviour
             {
                 RandomTimer = Time.time + Random.Range(lightningTimes.x, lightningTimes.y);
 
-                aud.PlayOneShot(ThunderClap);
+                aud.PlayOneShot(ThunderClap, thunderVol);
                 Lighting.intensity = 3f;
                 Invoke("TOff1", 0.2f);
             }
