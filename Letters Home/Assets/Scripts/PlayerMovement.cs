@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float MoveSpeed = 1.0f;
     Vector3 MoveVector = new Vector3();
     public bool attached;
+    public float attachedScale;
     public bool crouch;
     public bool crawl;
     public bool Up;
@@ -98,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
             Anim.SetFloat("ClimbDirection", Input.GetAxis("Vertical"));
             //spriteT.transform.rotation = Quaternion.Euler(0,0,Mathf.Lerp(90, spriteT.transform.rotation.z, 0.1f));
             //spriteT.transform.localPosition = new Vector3(1.4f, 0, 0);
-            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            transform.localScale = new Vector3(attachedScale, transform.localScale.y, transform.localScale.z);
             Anim.SetBool("Climbing", true);
         }
         else

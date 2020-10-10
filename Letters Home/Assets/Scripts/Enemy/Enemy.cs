@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
     public GameObject enemySprite;
     private NavMeshAgent agent;
 
-    public float speed = 3f;
+    public float speed = 1f;
     public float ganderSpeed = 0.75f;
     [HideInInspector]
     public bool isLooking = false;
@@ -30,6 +30,7 @@ public class Enemy : MonoBehaviour
     private Animator Anim;
     private float ct = 0;
     private float ctimer;
+    private bool killed;
 
 
     public bool MaybeSmoke = false;
@@ -58,6 +59,8 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (killed) return;
+
         if (SmokeTimer < Time.time && Target == null && !Dead)
         {
             int c = UnityEngine.Random.Range(0, 4);
@@ -262,12 +265,13 @@ public class Enemy : MonoBehaviour
             // Kill the Player
             Target.GetComponent<Player>().SetDead();
             Debug.Log("KiLL!");
+            killed = true;
 
-            // Reset patrol
-            patrol.isPatroling = true;
-            Anim.SetBool("Walkin", true);
-            patrol.reset = true;
-            agent.speed = speed;
+            //// Reset patrol
+            //patrol.isPatroling = true;
+            //Anim.SetBool("Walkin", true);
+            //patrol.reset = true;
+            //agent.speed = speed;
             if (Gun != null)
             {
                 Gun.SetActive(false);
@@ -279,11 +283,11 @@ public class Enemy : MonoBehaviour
             isSearching = true;
             agent.speed = ganderSpeed;
             
-            if (Gun != null)
-            {
-                Gun.SetActive(false);
-                Anim.SetBool("Aiming", false);
-            }
+            //if (Gun != null)
+            //{
+            //    Gun.SetActive(false);
+            //    Anim.SetBool("Aiming", false);
+            //}
         }
     }
 
